@@ -118,18 +118,43 @@
         const newSeen = [...seenIds, ...selected.map(q => q.id)];
         localStorage.setItem('infy_seen_qids', JSON.stringify(newSeen));
 
-        // Process questions and shuffle options
+        // Build an evenly distributed target position array across the 30 questions
+        // (roughly 7-8 of A, 7-8 of B, 7-8 of C, 7-8 of D)
+        const targetPositions = [];
+        for (let i = 0; i < 30; i++) {
+            targetPositions.push(i % 4);
+        }
+        shuffleArray(targetPositions);
+
+        // Ensure no 3 consecutive questions share the same correct option
+        for (let i = 2; i < targetPositions.length; i++) {
+            if (targetPositions[i] === targetPositions[i - 1] && targetPositions[i] === targetPositions[i - 2]) {
+                for (let j = i + 1; j < targetPositions.length; j++) {
+                    if (targetPositions[j] !== targetPositions[i]) {
+                        [targetPositions[i], targetPositions[j]] = [targetPositions[j], targetPositions[i]];
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Process questions and jumble options dynamically
         questions = selected.map((q, idx) => {
-            const correctText = q.options[q.correctAnswer];
-            const shuffledOptions = [...q.options];
-            shuffleArray(shuffledOptions);
-            const newCorrectIdx = shuffledOptions.indexOf(correctText);
+            const correctText = String(q.options[q.correctAnswer]);
+            // Extract the 3 distractors
+            const distractors = q.options.filter((_, oIdx) => oIdx !== q.correctAnswer);
+            shuffleArray(distractors);
+
+            // Assign target position (0=A, 1=B, 2=C, 3=D)
+            const assignedPos = targetPositions[idx % targetPositions.length];
+            const finalOptions = [...distractors];
+            finalOptions.splice(assignedPos, 0, correctText);
 
             return {
                 ...q,
                 testIndex: idx + 1,
-                options: shuffledOptions,
-                correctAnswer: newCorrectIdx,
+                options: finalOptions,
+                correctAnswer: assignedPos,
                 originalAnswerText: correctText
             };
         });

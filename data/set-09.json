@@ -12,12 +12,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 3)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
       "options": [
-        "12",
         "10",
         "9",
+        "12",
         "11"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "Loop calls r_sum(i) for i=1..3. The values are summed together resulting in 10."
     },
     {
@@ -28,12 +28,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(4)\nPrint ans",
       "options": [
-        "21",
-        "19",
         "22",
-        "20"
+        "20",
+        "21",
+        "19"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 1,
       "explanation": "rec_loop(4) sums 1..x for each level down to 1. Total sum = 20."
     },
     {
@@ -46,10 +46,10 @@
       "options": [
         "29",
         "28",
-        "26",
-        "27"
+        "27",
+        "26"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "power(3, 3) computes 3^3 recursively: 27."
     },
     {
@@ -61,11 +61,11 @@
       "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(16, 4)\nPrint ans",
       "options": [
         "5",
-        "4",
+        "3",
         "6",
-        "3"
+        "4"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Classic Euclidean algorithm to find GCD of 16 and 4. GCD is 4."
     },
     {
@@ -76,12 +76,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(26)\nPrint bits",
       "options": [
-        "2",
         "3",
         "4",
+        "2",
         "5"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "count_set_bits(26) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 26 is 11010, which has 3 set bits (1s)."
     },
     {
@@ -93,11 +93,11 @@
       "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 3)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
       "options": [
         "12",
+        "10",
         "11",
-        "9",
-        "10"
+        "9"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 1,
       "explanation": "Loop calls r_sum(i) for i=1..3. The values are summed together resulting in 10."
     },
     {
@@ -108,10 +108,10 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(4)\nPrint ans",
       "options": [
-        "22",
+        "21",
         "19",
         "20",
-        "21"
+        "22"
       ],
       "correctAnswer": 2,
       "explanation": "rec_loop(4) sums 1..x for each level down to 1. Total sum = 20."
@@ -124,12 +124,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(5, 2)\nPrint val",
       "options": [
-        "25",
-        "26",
         "24",
-        "27"
+        "26",
+        "27",
+        "25"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "power(5, 2) computes 5^2 recursively: 25."
     },
     {
@@ -140,12 +140,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(12, 8)\nPrint ans",
       "options": [
-        "5",
         "4",
-        "3",
-        "6"
+        "6",
+        "5",
+        "3"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "Classic Euclidean algorithm to find GCD of 12 and 8. GCD is 4."
     },
     {
@@ -156,12 +156,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(22)\nPrint bits",
       "options": [
-        "5",
-        "4",
         "2",
-        "3"
+        "3",
+        "4",
+        "5"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 1,
       "explanation": "count_set_bits(22) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 22 is 10110, which has 3 set bits (1s)."
     },
     {
@@ -173,11 +173,11 @@
       "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 5)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
       "options": [
         "36",
-        "37",
         "34",
-        "35"
+        "35",
+        "37"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "Loop calls r_sum(i) for i=1..5. The values are summed together resulting in 35."
     },
     {
@@ -188,12 +188,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(3)\nPrint ans",
       "options": [
-        "10",
         "9",
+        "12",
         "11",
-        "12"
+        "10"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "rec_loop(3) sums 1..x for each level down to 1. Total sum = 10."
     },
     {
@@ -206,8 +206,8 @@
       "options": [
         "4",
         "6",
-        "5",
-        "3"
+        "3",
+        "5"
       ],
       "correctAnswer": 0,
       "explanation": "power(4, 1) computes 4^1 recursively: 4."
@@ -238,10 +238,10 @@
       "options": [
         "3",
         "4",
-        "1",
-        "2"
+        "2",
+        "1"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "count_set_bits(17) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 17 is 10001, which has 2 set bits (1s)."
     },
     {
@@ -252,12 +252,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 4)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
       "options": [
+        "19",
         "22",
-        "20",
         "21",
-        "19"
+        "20"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Loop calls r_sum(i) for i=1..4. The values are summed together resulting in 20."
     },
     {
@@ -269,9 +269,9 @@
       "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(5)\nPrint ans",
       "options": [
         "35",
-        "34",
         "36",
-        "37"
+        "37",
+        "34"
       ],
       "correctAnswer": 0,
       "explanation": "rec_loop(5) sums 1..x for each level down to 1. Total sum = 35."
@@ -284,12 +284,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(3, 3)\nPrint val",
       "options": [
-        "27",
         "29",
+        "27",
         "28",
         "26"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "power(3, 3) computes 3^3 recursively: 27."
     },
     {
@@ -300,12 +300,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(16, 6)\nPrint ans",
       "options": [
-        "2",
-        "3",
         "4",
-        "1"
+        "1",
+        "2",
+        "3"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Classic Euclidean algorithm to find GCD of 16 and 6. GCD is 2."
     },
     {
@@ -316,12 +316,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(27)\nPrint bits",
       "options": [
-        "4",
-        "6",
         "3",
-        "5"
+        "5",
+        "6",
+        "4"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "count_set_bits(27) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 27 is 11011, which has 4 set bits (1s)."
     },
     {
@@ -332,12 +332,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 3)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
       "options": [
-        "9",
+        "10",
         "11",
-        "12",
-        "10"
+        "9",
+        "12"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 0,
       "explanation": "Loop calls r_sum(i) for i=1..3. The values are summed together resulting in 10."
     },
     {
@@ -348,12 +348,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(4)\nPrint ans",
       "options": [
-        "22",
-        "21",
         "19",
-        "20"
+        "20",
+        "22",
+        "21"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 1,
       "explanation": "rec_loop(4) sums 1..x for each level down to 1. Total sum = 20."
     },
     {
@@ -364,12 +364,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(5, 1)\nPrint val",
       "options": [
-        "6",
-        "5",
         "4",
-        "7"
+        "7",
+        "5",
+        "6"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 2,
       "explanation": "power(5, 1) computes 5^1 recursively: 5."
     },
     {
@@ -380,12 +380,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(12, 8)\nPrint ans",
       "options": [
-        "3",
-        "4",
         "5",
-        "6"
+        "6",
+        "3",
+        "4"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Classic Euclidean algorithm to find GCD of 12 and 8. GCD is 4."
     },
     {
@@ -428,8 +428,8 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(3)\nPrint ans",
       "options": [
-        "12",
         "11",
+        "12",
         "10",
         "9"
       ],
@@ -445,8 +445,8 @@
       "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(4, 2)\nPrint val",
       "options": [
         "18",
-        "17",
         "15",
+        "17",
         "16"
       ],
       "correctAnswer": 3,
@@ -460,12 +460,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(20, 2)\nPrint ans",
       "options": [
-        "3",
-        "4",
         "2",
+        "4",
+        "3",
         "1"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 0,
       "explanation": "Classic Euclidean algorithm to find GCD of 20 and 2. GCD is 2."
     },
     {
@@ -476,12 +476,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(17)\nPrint bits",
       "options": [
-        "3",
         "4",
         "2",
-        "1"
+        "1",
+        "3"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "count_set_bits(17) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 17 is 10001, which has 2 set bits (1s)."
     }
   ]

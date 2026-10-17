@@ -8,12 +8,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, d\nSet a = 15, b = 4, c = 3\nSet d = a / b * c + a mod b\nPrint d",
     "options": [
-      "14",
-      "11",
+      "12",
       "9",
-      "12"
+      "14",
+      "11"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "In integer arithmetic, a / b is 15 / 4 = 3. Then (3 * 3) = 9. a mod b is 15 mod 4 = 3. So d = 9 + 3 = 12."
   },
   {
@@ -24,12 +24,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 20, q = 6, r = 2\nSet p = p / q + p mod (r + 1)\nPrint p",
     "options": [
-      "2",
-      "4",
+      "7",
       "5",
-      "7"
+      "4",
+      "2"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "r + 1 = 3. Integer division p / q = 20 / 6 = 3. 20 mod 3 = 2. So p = 3 + 2 = 5."
   },
   {
@@ -42,10 +42,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "4",
       "5",
-      "8",
-      "6"
+      "6",
+      "8"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "(x * y) = 24. (x - y) = 5. Integer division 24 / 5 = 4. 8 mod 3 = 2. So z = 4 + 2 = 6."
   },
   {
@@ -56,9 +56,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c\nSet a = 25, b = 7\nSet c = a - b * (a / b)\nPrint c",
     "options": [
+      "7",
       "3",
       "0",
-      "7",
       "4"
     ],
     "correctAnswer": 3,
@@ -72,12 +72,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer m, n, p\nSet m = 14, n = 5\nSet p = (m mod n) * (m / n) + (n / 2)\nPrint p",
     "options": [
-      "12",
-      "8",
       "10",
-      "14"
+      "8",
+      "14",
+      "12"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "14 mod 5 = 4. 14 / 5 = 2. 5 / 2 = 2. So p = (4 * 2) + 2 = 8 + 2 = 10."
   },
   {
@@ -88,12 +88,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 18, b = 5, c = 4\nSet ans = (a + b) * c - a / b\nPrint ans",
     "options": [
-      "94",
       "91",
+      "89",
       "87",
-      "89"
+      "94"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "(a + b) = 23. Multiply by c (4) = 92. Integer division a / b = 3. Result = 92 - 3 = 89."
   },
   {
@@ -104,8 +104,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 32, b = 6, c = 5\nSet ans = a * (b mod c) + a / c\nPrint ans",
     "options": [
-      "36",
       "43",
+      "36",
       "38",
       "40"
     ],
@@ -136,12 +136,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 27, b = 4, c = 2\nSet ans = a - (b * c) + (a mod c) * b\nPrint ans",
     "options": [
+      "23",
       "28",
       "21",
-      "25",
-      "23"
+      "25"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "b * c = 8. a mod c = 1. (a mod c) * b = 4. Result = 27 - 8 + 4 = 23."
   },
   {
@@ -152,12 +152,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 50, b = 9, c = 7\nSet ans = (a / b) * (a mod b) + (b * c)\nPrint ans",
     "options": [
-      "93",
       "90",
-      "86",
-      "88"
+      "88",
+      "93",
+      "86"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "a / b = 5. a mod b = 5. Product = 25. b * c = 63. Result = 88."
   },
   {
@@ -168,12 +168,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 13, b = 3, c = 2\nSet ans = (a + b) * c - a / b\nPrint ans",
     "options": [
-      "26",
-      "33",
       "30",
-      "28"
+      "33",
+      "28",
+      "26"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "(a + b) = 16. Multiply by c (2) = 32. Integer division a / b = 4. Result = 32 - 4 = 28."
   },
   {
@@ -184,12 +184,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 29, b = 7, c = 4\nSet ans = a * (b mod c) + a / c\nPrint ans",
     "options": [
-      "94",
-      "96",
+      "99",
       "92",
-      "99"
+      "96",
+      "94"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "b mod c = 3. a * 3 = 87. a / c = 7. Result = 94."
   },
   {
@@ -200,12 +200,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 41, b = 6, c = 3\nSet ans = (a mod b) * (b + c) - (a / c)\nPrint ans",
     "options": [
+      "32",
       "37",
-      "30",
       "34",
-      "32"
+      "30"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "a mod b = 5. (b + c) = 9. Product = 45. a / c = 13. Result = 32."
   },
   {
@@ -216,10 +216,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 35, b = 8, c = 5\nSet ans = a - (b * c) + (a mod c) * b\nPrint ans",
     "options": [
-      "-7",
-      "-5",
       "-3",
-      "0"
+      "-5",
+      "0",
+      "-7"
     ],
     "correctAnswer": 1,
     "explanation": "b * c = 40. a mod c = 0. (a mod c) * b = 0. Result = 35 - 40 + 0 = -5."
@@ -232,10 +232,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 64, b = 10, c = 3\nSet ans = (a / b) * (a mod b) + (b * c)\nPrint ans",
     "options": [
-      "56",
       "52",
+      "59",
       "54",
-      "59"
+      "56"
     ],
     "correctAnswer": 2,
     "explanation": "a / b = 6. a mod b = 4. Product = 24. b * c = 30. Result = 54."
@@ -248,9 +248,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 22, b = 5, c = 3\nSet ans = (a + b) * c - a / b\nPrint ans",
     "options": [
-      "79",
       "75",
       "82",
+      "79",
       "77"
     ],
     "correctAnswer": 3,
@@ -264,12 +264,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 38, b = 7, c = 2\nSet ans = a * (b mod c) + a / c\nPrint ans",
     "options": [
+      "57",
       "55",
-      "59",
       "62",
-      "57"
+      "59"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "b mod c = 1. a * 1 = 38. a / c = 19. Result = 57."
   },
   {
@@ -280,12 +280,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 49, b = 9, c = 4\nSet ans = (a mod b) * (b + c) - (a / c)\nPrint ans",
     "options": [
+      "45",
       "40",
-      "38",
       "42",
-      "45"
+      "38"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "a mod b = 4. (b + c) = 13. Product = 52. a / c = 12. Result = 40."
   },
   {
@@ -296,12 +296,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 55, b = 6, c = 8\nSet ans = a - (b * c) + (a mod c) * b\nPrint ans",
     "options": [
-      "49",
-      "47",
+      "54",
       "51",
-      "54"
+      "49",
+      "47"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "b * c = 48. a mod c = 7. (a mod c) * b = 42. Result = 55 - 48 + 42 = 49."
   },
   {
@@ -312,12 +312,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 19, b = 4, c = 3\nSet ans = (a / b) * (a mod b) + (b * c)\nPrint ans",
     "options": [
-      "24",
-      "22",
       "29",
-      "26"
+      "22",
+      "26",
+      "24"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "a / b = 4. a mod b = 3. Product = 12. b * c = 12. Result = 24."
   },
   {
@@ -328,12 +328,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 31, b = 5, c = 6\nSet ans = (a + b) * c - a / b\nPrint ans",
     "options": [
-      "215",
-      "212",
+      "210",
       "208",
-      "210"
+      "212",
+      "215"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "(a + b) = 36. Multiply by c (6) = 216. Integer division a / b = 6. Result = 216 - 6 = 210."
   },
   {
@@ -360,12 +360,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 60, b = 7, c = 5\nSet ans = (a mod b) * (b + c) - (a / c)\nPrint ans",
     "options": [
-      "41",
-      "34",
       "38",
-      "36"
+      "34",
+      "36",
+      "41"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "a mod b = 4. (b + c) = 12. Product = 48. a / c = 12. Result = 36."
   },
   {
@@ -376,12 +376,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 23, b = 3, c = 4\nSet ans = a - (b * c) + (a mod c) * b\nPrint ans",
     "options": [
-      "18",
-      "20",
+      "25",
       "22",
-      "25"
+      "18",
+      "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "b * c = 12. a mod c = 3. (a mod c) * b = 9. Result = 23 - 12 + 9 = 20."
   },
   {
@@ -393,9 +393,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, ans\nSet a = 37, b = 6, c = 2\nSet ans = (a / b) * (a mod b) + (b * c)\nPrint ans",
     "options": [
       "18",
-      "20",
+      "16",
       "23",
-      "16"
+      "20"
     ],
     "correctAnswer": 0,
     "explanation": "a / b = 6. a mod b = 1. Product = 6. b * c = 12. Result = 18."
@@ -424,12 +424,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 53, b = 8, c = 4\nSet ans = a * (b mod c) + a / c\nPrint ans",
     "options": [
-      "15",
-      "18",
       "11",
-      "13"
+      "15",
+      "13",
+      "18"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "b mod c = 0. a * 0 = 0. a / c = 13. Result = 13."
   },
   {
@@ -440,12 +440,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 17, b = 3, c = 5\nSet ans = (a mod b) * (b + c) - (a / c)\nPrint ans",
     "options": [
+      "15",
       "18",
       "11",
-      "13",
-      "15"
+      "13"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "a mod b = 2. (b + c) = 8. Product = 16. a / c = 3. Result = 13."
   },
   {
@@ -456,12 +456,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 26, b = 4, c = 3\nSet ans = a - (b * c) + (a mod c) * b\nPrint ans",
     "options": [
-      "27",
-      "20",
       "22",
+      "20",
+      "27",
       "24"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "b * c = 12. a mod c = 2. (a mod c) * b = 8. Result = 26 - 12 + 8 = 22."
   },
   {
@@ -472,12 +472,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 39, b = 9, c = 2\nSet ans = (a / b) * (a mod b) + (b * c)\nPrint ans",
     "options": [
-      "28",
       "32",
+      "30",
       "35",
-      "30"
+      "28"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "a / b = 4. a mod b = 3. Product = 12. b * c = 18. Result = 30."
   },
   {
@@ -488,8 +488,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 10, b = 20, c = 15\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
     "options": [
-      "17",
       "23",
+      "17",
       "20",
       "21"
     ],
@@ -504,12 +504,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 5, b = 5, c = 10\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
     "options": [
-      "10",
-      "7",
+      "11",
       "13",
-      "11"
+      "7",
+      "10"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(a EQUALS b) is True. (c > a + b) is (10 > 10) = False. The OR condition is True. Result is 10."
   },
   {
@@ -520,12 +520,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, val\nSet a = 12, b = 8, c = 4\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
     "options": [
-      "5",
       "8",
+      "11",
       "9",
-      "11"
+      "5"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "NOT(a > b) is False. c mod 2 EQUALS 0 is True. AND condition is False. Value is 8."
   },
   {
@@ -536,12 +536,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, out\nSet a = 7, b = 14, c = 21\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
     "options": [
-      "39",
-      "43",
+      "45",
       "42",
-      "45"
+      "39",
+      "43"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "(7 + 14 >= 21) is True. (14 - 7 < 21) is True. Condition is True. out = 42."
   },
   {
@@ -553,9 +553,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, ans\nSet a = 15, b = 30, c = 25\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
     "options": [
       "58",
-      "52",
+      "56",
       "55",
-      "56"
+      "52"
     ],
     "correctAnswer": 2,
     "explanation": "(30 > 30) is False. (60 < 25) is False. Condition evaluates to False. Result = 55."
@@ -568,12 +568,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, x\nSet a = 18, b = 9, c = 3\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
     "options": [
+      "11",
       "13",
-      "10",
       "7",
-      "11"
+      "10"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is False. Combined is False. Result = 10."
   },
   {
@@ -584,12 +584,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 24, b = 12, c = 6\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
     "options": [
-      "10",
-      "4",
       "7",
-      "8"
+      "8",
+      "10",
+      "4"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Evaluate (a < b): (24 < 12) is False. Evaluate (b > c): (12 > 6) is True. Both AND evaluates to False. Branch taken yields 7."
   },
   {
@@ -600,12 +600,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 9, b = 9, c = 9\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
     "options": [
-      "19",
       "15",
-      "21",
-      "18"
+      "18",
+      "19",
+      "21"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "(a EQUALS b) is True. (c > a + b) is (9 > 18) = False. The OR condition is True. Result is 18."
   },
   {
@@ -616,12 +616,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, val\nSet a = 14, b = 28, c = 7\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
     "options": [
-      "21",
       "24",
-      "18",
-      "22"
+      "22",
+      "21",
+      "18"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "NOT(a > b) is True. c mod 2 EQUALS 0 is False. AND condition is False. Value is 21."
   },
   {
@@ -632,12 +632,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, out\nSet a = 16, b = 4, c = 8\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
     "options": [
-      "29",
       "31",
-      "28",
-      "25"
+      "29",
+      "25",
+      "28"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "(16 + 4 >= 8) is True. (4 - 16 < 8) is True. Condition is True. out = 28."
   },
   {
@@ -664,12 +664,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, x\nSet a = 11, b = 22, c = 33\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
     "options": [
-      "39",
-      "43",
+      "45",
       "42",
-      "45"
+      "39",
+      "43"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is True. Combined is True. Result = 42."
   },
   {
@@ -680,12 +680,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 8, b = 16, c = 24\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
     "options": [
-      "12",
-      "14",
       "8",
-      "11"
+      "12",
+      "11",
+      "14"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "Evaluate (a < b): (8 < 16) is True. Evaluate (b > c): (16 > 24) is False. Both AND evaluates to False. Branch taken yields 11."
   },
   {
@@ -696,12 +696,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 25, b = 5, c = 10\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
     "options": [
-      "-18",
       "-12",
-      "-15",
-      "-14"
+      "-14",
+      "-18",
+      "-15"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "(a EQUALS b) is False. (c > a + b) is (10 > 30) = False. The OR condition is False. Result is -15."
   },
   {
@@ -712,12 +712,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, val\nSet a = 13, b = 26, c = 39\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
     "options": [
-      "55",
       "52",
+      "55",
       "49",
       "53"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "NOT(a > b) is True. c mod 2 EQUALS 0 is False. AND condition is False. Value is 52."
   },
   {
@@ -729,11 +729,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, out\nSet a = 40, b = 20, c = 10\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
     "options": [
       "71",
-      "73",
       "70",
-      "67"
+      "67",
+      "73"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "(40 + 20 >= 10) is True. (20 - 40 < 10) is True. Condition is True. out = 70."
   },
   {
@@ -744,12 +744,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 6, b = 18, c = 12\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
     "options": [
-      "33",
-      "31",
       "27",
-      "30"
+      "31",
+      "30",
+      "33"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "(12 > 18) is False. (36 < 12) is False. Condition evaluates to False. Result = 30."
   },
   {
@@ -760,12 +760,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, x\nSet a = 21, b = 7, c = 14\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
     "options": [
-      "27",
       "30",
       "24",
-      "28"
+      "28",
+      "27"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is True. Combined is True. Result = 27."
   },
   {
@@ -776,12 +776,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 35, b = 7, c = 28\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
     "options": [
-      "3",
-      "-1",
       "2",
-      "5"
+      "-1",
+      "5",
+      "3"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Evaluate (a < b): (35 < 7) is False. Evaluate (b > c): (7 > 28) is False. Both AND evaluates to False. Branch taken yields 2."
   },
   {
@@ -792,10 +792,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 17, b = 34, c = 51\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
     "options": [
-      "35",
+      "31",
       "34",
       "37",
-      "31"
+      "35"
     ],
     "correctAnswer": 1,
     "explanation": "(a EQUALS b) is False. (c > a + b) is (51 > 51) = False. The OR condition is False. Result is 34."
@@ -824,9 +824,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, out\nSet a = 4, b = 8, c = 16\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
     "options": [
-      "19",
       "13",
       "17",
+      "19",
       "16"
     ],
     "correctAnswer": 3,
@@ -840,12 +840,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 27, b = 9, c = 18\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
     "options": [
-      "39",
-      "37",
+      "36",
       "33",
-      "36"
+      "37",
+      "39"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "(54 > 9) is True. (18 < 18) is False. Condition evaluates to True. Result = 36."
   },
   {
@@ -856,12 +856,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, x\nSet a = 32, b = 16, c = 8\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
     "options": [
+      "21",
       "24",
       "25",
-      "21",
       "27"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is False. Combined is False. Result = 24."
   },
   {
@@ -872,12 +872,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 48, b = 24, c = 12\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
     "options": [
-      "19",
       "22",
       "20",
+      "19",
       "16"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Evaluate (a < b): (48 < 24) is False. Evaluate (b > c): (24 > 12) is True. Both AND evaluates to False. Branch taken yields 19."
   },
   {
@@ -888,12 +888,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 3, b = 9, c = 27\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
     "options": [
-      "6",
-      "9",
       "3",
-      "7"
+      "7",
+      "9",
+      "6"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(a EQUALS b) is False. (c > a + b) is (27 > 12) = True. The OR condition is True. Result is 6."
   },
   {
@@ -906,8 +906,8 @@ window.QUESTIONS_POOL = [
     "options": [
       "49",
       "46",
-      "52",
-      "50"
+      "50",
+      "52"
     ],
     "correctAnswer": 0,
     "explanation": "NOT(a > b) is False. c mod 2 EQUALS 0 is True. AND condition is False. Value is 49."
@@ -921,11 +921,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, out\nSet a = 19, b = 38, c = 57\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
     "options": [
       "115",
+      "114",
       "111",
-      "117",
-      "114"
+      "117"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "(19 + 38 >= 57) is True. (38 - 19 < 57) is True. Condition is True. out = 114."
   },
   {
@@ -936,12 +936,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, ans\nSet a = 45, b = 15, c = 30\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
     "options": [
-      "60",
-      "61",
       "57",
-      "63"
+      "63",
+      "60",
+      "61"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "(90 > 15) is True. (30 < 30) is False. Condition evaluates to True. Result = 60."
   },
   {
@@ -952,12 +952,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, x\nSet a = 36, b = 18, c = 9\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
     "options": [
-      "30",
       "24",
-      "27",
-      "28"
+      "30",
+      "28",
+      "27"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is False. Combined is False. Result = 27."
   },
   {
@@ -969,8 +969,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer p, q, r\nSet p = 12, q = 25\nSet r = (p & q) + (p ^ q)\nPrint r",
     "options": [
       "29",
-      "31",
       "33",
+      "31",
       "27"
     ],
     "correctAnswer": 0,
@@ -984,12 +984,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, res\nSet p = 7, q = 11\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
     "options": [
-      "9",
       "15",
+      "11",
       "13",
-      "11"
+      "9"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "p << 1 is 7 * 2 = 14. q >> 1 is 11 / 2 = 5. Bitwise XOR (14 ^ 5) = 11."
   },
   {
@@ -1002,10 +1002,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "26",
       "28",
-      "22",
-      "24"
+      "24",
+      "22"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "(p | q) = 31. (p & q) = 7. val = 31 - 7 = 24. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
   },
   {
@@ -1016,12 +1016,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, ans\nSet p = 18\nSet ans = (p & 7) << 2\nPrint ans",
     "options": [
-      "12",
       "6",
-      "8",
-      "10"
+      "10",
+      "12",
+      "8"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "(p & 7) masks the lowest 3 bits of 18, yielding 2. Left shifting by 2 multiplies by 4: 2 << 2 = 8."
   },
   {
@@ -1032,12 +1032,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, out\nSet p = 5, q = 9\nSet out = (p ^ q) ^ p\nPrint out",
     "options": [
-      "7",
+      "9",
       "13",
-      "11",
-      "9"
+      "7",
+      "11"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 9."
   },
   {
@@ -1048,12 +1048,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 14, q = 28\nSet r = (p & 15) + (q >> 2)\nPrint r",
     "options": [
+      "25",
       "21",
-      "19",
       "23",
-      "25"
+      "19"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "p & 15 = 14. q >> 2 = 7. r = 14 + 7 = 21."
   },
   {
@@ -1064,12 +1064,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 8, q = 13\nSet r = (p & q) + (p ^ q)\nPrint r",
     "options": [
-      "13",
       "15",
-      "11",
-      "17"
+      "17",
+      "13",
+      "11"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Bitwise AND (8 & 13) = 8. Bitwise XOR (8 ^ 13) = 5. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 8 + 5 = 13."
   },
   {
@@ -1080,9 +1080,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, res\nSet p = 21, q = 14\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
     "options": [
-      "47",
       "49",
       "43",
+      "47",
       "45"
     ],
     "correctAnswer": 3,
@@ -1096,12 +1096,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, val\nSet p = 30, q = 19\nSet val = (p | q) - (p & q)\nPrint val",
     "options": [
+      "13",
       "11",
       "17",
-      "13",
       "15"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "(p | q) = 31. (p & q) = 18. val = 31 - 18 = 13. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
   },
   {
@@ -1112,12 +1112,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, ans\nSet p = 10\nSet ans = (p & 7) << 2\nPrint ans",
     "options": [
-      "6",
-      "10",
+      "12",
       "8",
-      "12"
+      "10",
+      "6"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "(p & 7) masks the lowest 3 bits of 10, yielding 2. Left shifting by 2 multiplies by 4: 2 << 2 = 8."
   },
   {
@@ -1129,9 +1129,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer p, q, out\nSet p = 16, q = 7\nSet out = (p ^ q) ^ p\nPrint out",
     "options": [
       "9",
-      "11",
+      "5",
       "7",
-      "5"
+      "11"
     ],
     "correctAnswer": 2,
     "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 7."
@@ -1144,12 +1144,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 27, q = 13\nSet r = (p & 15) + (q >> 2)\nPrint r",
     "options": [
-      "18",
-      "14",
+      "16",
       "12",
-      "16"
+      "18",
+      "14"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "p & 15 = 11. q >> 2 = 3. r = 11 + 3 = 14."
   },
   {
@@ -1160,12 +1160,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 35, q = 22\nSet r = (p & q) + (p ^ q)\nPrint r",
     "options": [
-      "53",
       "55",
-      "59",
-      "57"
+      "53",
+      "57",
+      "59"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Bitwise AND (35 & 22) = 2. Bitwise XOR (35 ^ 22) = 53. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 2 + 53 = 55."
   },
   {
@@ -1176,12 +1176,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, res\nSet p = 40, q = 17\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
     "options": [
+      "90",
       "88",
       "86",
-      "90",
       "92"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "p << 1 is 40 * 2 = 80. q >> 1 is 17 / 2 = 8. Bitwise XOR (80 ^ 8) = 88."
   },
   {
@@ -1193,11 +1193,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer p, q, val\nSet p = 25, q = 18\nSet val = (p | q) - (p & q)\nPrint val",
     "options": [
       "9",
+      "13",
       "11",
-      "15",
-      "13"
+      "15"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "(p | q) = 27. (p & q) = 16. val = 27 - 16 = 11. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
   },
   {
@@ -1208,12 +1208,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, ans\nSet p = 11\nSet ans = (p & 7) << 2\nPrint ans",
     "options": [
-      "12",
+      "14",
       "16",
       "10",
-      "14"
+      "12"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(p & 7) masks the lowest 3 bits of 11, yielding 3. Left shifting by 2 multiplies by 4: 3 << 2 = 12."
   },
   {
@@ -1225,9 +1225,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer p, q, out\nSet p = 9, q = 15\nSet out = (p ^ q) ^ p\nPrint out",
     "options": [
       "15",
-      "13",
       "19",
-      "17"
+      "17",
+      "13"
     ],
     "correctAnswer": 0,
     "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 15."
@@ -1240,12 +1240,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 20, q = 10\nSet r = (p & 15) + (q >> 2)\nPrint r",
     "options": [
+      "10",
       "6",
-      "4",
       "8",
-      "10"
+      "4"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "p & 15 = 4. q >> 2 = 2. r = 4 + 2 = 6."
   },
   {
@@ -1256,12 +1256,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 33, q = 14\nSet r = (p & q) + (p ^ q)\nPrint r",
     "options": [
-      "47",
+      "45",
       "49",
-      "51",
-      "45"
+      "47",
+      "51"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Bitwise AND (33 & 14) = 0. Bitwise XOR (33 ^ 14) = 47. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 0 + 47 = 47."
   },
   {
@@ -1272,12 +1272,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, res\nSet p = 45, q = 27\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
     "options": [
-      "87",
       "85",
+      "91",
       "89",
-      "91"
+      "87"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "p << 1 is 45 * 2 = 90. q >> 1 is 27 / 2 = 13. Bitwise XOR (90 ^ 13) = 87."
   },
   {
@@ -1289,8 +1289,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer p, q, val\nSet p = 6, q = 13\nSet val = (p | q) - (p & q)\nPrint val",
     "options": [
       "11",
-      "15",
       "13",
+      "15",
       "9"
     ],
     "correctAnswer": 0,
@@ -1304,12 +1304,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, ans\nSet p = 24\nSet ans = (p & 7) << 2\nPrint ans",
     "options": [
-      "4",
-      "-2",
       "2",
-      "0"
+      "0",
+      "4",
+      "-2"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "(p & 7) masks the lowest 3 bits of 24, yielding 0. Left shifting by 2 multiplies by 4: 0 << 2 = 0."
   },
   {
@@ -1320,12 +1320,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, out\nSet p = 17, q = 31\nSet out = (p ^ q) ^ p\nPrint out",
     "options": [
-      "31",
-      "35",
+      "33",
       "29",
-      "33"
+      "31",
+      "35"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 31."
   },
   {
@@ -1336,12 +1336,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 50, q = 21\nSet r = (p & 15) + (q >> 2)\nPrint r",
     "options": [
-      "5",
-      "7",
       "11",
-      "9"
+      "5",
+      "9",
+      "7"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "p & 15 = 2. q >> 2 = 5. r = 2 + 5 = 7."
   },
   {
@@ -1352,12 +1352,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 22, q = 19\nSet r = (p & q) + (p ^ q)\nPrint r",
     "options": [
+      "23",
       "27",
-      "21",
       "25",
-      "23"
+      "21"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "Bitwise AND (22 & 19) = 18. Bitwise XOR (22 ^ 19) = 5. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 18 + 5 = 23."
   },
   {
@@ -1368,9 +1368,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, res\nSet p = 13, q = 27\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
     "options": [
-      "27",
-      "23",
       "21",
+      "23",
+      "27",
       "25"
     ],
     "correctAnswer": 1,
@@ -1385,11 +1385,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer p, q, val\nSet p = 28, q = 15\nSet val = (p | q) - (p & q)\nPrint val",
     "options": [
       "21",
-      "19",
       "23",
+      "19",
       "17"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "(p | q) = 31. (p & q) = 12. val = 31 - 12 = 19. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
   },
   {
@@ -1400,12 +1400,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, ans\nSet p = 31\nSet ans = (p & 7) << 2\nPrint ans",
     "options": [
-      "28",
-      "32",
+      "26",
       "30",
-      "26"
+      "32",
+      "28"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(p & 7) masks the lowest 3 bits of 31, yielding 7. Left shifting by 2 multiplies by 4: 7 << 2 = 28."
   },
   {
@@ -1416,12 +1416,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, out\nSet p = 19, q = 25\nSet out = (p ^ q) ^ p\nPrint out",
     "options": [
-      "29",
       "25",
       "27",
-      "23"
+      "23",
+      "29"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 25."
   },
   {
@@ -1432,12 +1432,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer p, q, r\nSet p = 36, q = 42\nSet r = (p & 15) + (q >> 2)\nPrint r",
     "options": [
-      "12",
-      "18",
       "16",
-      "14"
+      "14",
+      "18",
+      "12"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "p & 15 = 4. q >> 2 = 10. r = 4 + 10 = 14."
   },
   {
@@ -1448,12 +1448,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, val\nSet x = 15, y = 25, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
     "options": [
-      "20",
       "35",
-      "50",
-      "40"
+      "20",
+      "40",
+      "50"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "x (15) > 10 is True. In the inner block, y (25) > 20 is True. Result val = 40."
   },
   {
@@ -1466,10 +1466,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "35",
       "50",
-      "30",
-      "20"
+      "20",
+      "30"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Sum x + y = 50. Checking conditions in order: 50 > 60 is False, 40 > 10 is True. Corresponding branch evaluates to 30."
   },
   {
@@ -1480,12 +1480,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, ans\nSet x = 18, y = 18\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
     "options": [
-      "35",
-      "20",
       "36",
-      "50"
+      "50",
+      "20",
+      "35"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 36."
   },
   {
@@ -1496,12 +1496,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, score\nSet x = 30, y = 40\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
     "options": [
-      "100",
-      "50",
       "35",
-      "20"
+      "100",
+      "20",
+      "50"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 100."
   },
   {
@@ -1512,12 +1512,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b\nSet a = 12, b = 8\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
     "options": [
+      "50",
       "35",
       "25",
-      "50",
       "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Initially a=12, b=8. First if: 12 < 8 is False, updated a=12. Second if: 8 < 12 is True, updated b=13. Sum a + b = 25."
   },
   {
@@ -1528,12 +1528,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, val\nSet x = 50, y = 50, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
     "options": [
-      "35",
-      "100",
       "50",
-      "20"
+      "20",
+      "35",
+      "100"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "x (50) > 10 is True. In the inner block, y (50) > 20 is True. Result val = 100."
   },
   {
@@ -1544,12 +1544,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, res\nSet x = 9, y = 27\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
     "options": [
+      "18",
       "50",
       "35",
-      "20",
-      "18"
+      "20"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "Sum x + y = 36. Checking conditions in order: 36 > 60 is False, 9 > 27 is False. Corresponding branch evaluates to 18."
   },
   {
@@ -1560,12 +1560,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, ans\nSet x = 24, y = 16\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
     "options": [
-      "50",
-      "35",
+      "20",
       "40",
-      "20"
+      "50",
+      "35"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 40."
   },
   {
@@ -1576,12 +1576,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, score\nSet x = 35, y = 65\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
     "options": [
-      "20",
       "50",
-      "35",
-      "135"
+      "20",
+      "135",
+      "35"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 135."
   },
   {
@@ -1593,11 +1593,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b\nSet a = 8, b = 64\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
     "options": [
       "35",
-      "82",
       "50",
-      "20"
+      "20",
+      "82"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Initially a=8, b=64. First if: 8 < 64 is True, updated a=18. Second if: 64 < 18 is False, updated b=64. Sum a + b = 82."
   },
   {
@@ -1608,12 +1608,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, val\nSet x = 14, y = 21, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
     "options": [
-      "20",
-      "50",
       "35",
-      "15"
+      "15",
+      "50",
+      "20"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "x (14) > 10 is True. In the inner block, y (21) > 20 is True. Result val = 35."
   },
   {
@@ -1624,12 +1624,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, res\nSet x = 33, y = 11\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
     "options": [
-      "22",
-      "20",
       "35",
-      "50"
+      "22",
+      "50",
+      "20"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "Sum x + y = 44. Checking conditions in order: 44 > 60 is False, 33 > 11 is True. Corresponding branch evaluates to 22."
   },
   {
@@ -1640,12 +1640,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, ans\nSet x = 20, y = 20\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
     "options": [
-      "20",
-      "50",
       "35",
-      "40"
+      "20",
+      "40",
+      "50"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 40."
   },
   {
@@ -1657,11 +1657,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer x, y, score\nSet x = 40, y = 15\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
     "options": [
       "50",
-      "55",
       "20",
-      "35"
+      "35",
+      "55"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "x > y is True. Executing corresponding branch updates variable and computes score = 55."
   },
   {
@@ -1688,12 +1688,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, val\nSet x = 28, y = 14, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
     "options": [
-      "35",
       "20",
-      "50",
-      "14"
+      "14",
+      "35",
+      "50"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "x (28) > 10 is True. In the inner block, y (14) > 20 is False. Result val = 14."
   },
   {
@@ -1704,10 +1704,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, res\nSet x = 60, y = 20\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
     "options": [
-      "20",
+      "35",
       "50",
       "40",
-      "35"
+      "20"
     ],
     "correctAnswer": 2,
     "explanation": "Sum x + y = 80. Checking conditions in order: 80 > 60 is True, 60 > 20 is True. Corresponding branch evaluates to 40."
@@ -1720,8 +1720,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, ans\nSet x = 16, y = 32\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
     "options": [
-      "35",
       "50",
+      "35",
       "20",
       "48"
     ],
@@ -1736,12 +1736,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, score\nSet x = 25, y = 70\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
     "options": [
-      "50",
       "120",
-      "35",
-      "20"
+      "50",
+      "20",
+      "35"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 120."
   },
   {
@@ -1752,10 +1752,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b\nSet a = 10, b = 100\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
     "options": [
-      "35",
+      "20",
       "120",
-      "50",
-      "20"
+      "35",
+      "50"
     ],
     "correctAnswer": 1,
     "explanation": "Initially a=10, b=100. First if: 10 < 100 is True, updated a=20. Second if: 100 < 20 is False, updated b=100. Sum a + b = 120."
@@ -1768,12 +1768,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, val\nSet x = 17, y = 34, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
     "options": [
-      "20",
       "35",
       "50",
-      "51"
+      "51",
+      "20"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "x (17) > 10 is True. In the inner block, y (34) > 20 is True. Result val = 51."
   },
   {
@@ -1784,12 +1784,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, res\nSet x = 80, y = 40\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
     "options": [
+      "50",
       "35",
       "20",
-      "60",
-      "50"
+      "60"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Sum x + y = 120. Checking conditions in order: 120 > 60 is True, 80 > 40 is True. Corresponding branch evaluates to 60."
   },
   {
@@ -1800,12 +1800,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, ans\nSet x = 22, y = 22\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
     "options": [
-      "20",
       "44",
       "35",
-      "50"
+      "50",
+      "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 44."
   },
   {
@@ -1818,8 +1818,8 @@ window.QUESTIONS_POOL = [
     "options": [
       "35",
       "43",
-      "50",
-      "20"
+      "20",
+      "50"
     ],
     "correctAnswer": 1,
     "explanation": "x > y is True. Executing corresponding branch updates variable and computes score = 43."
@@ -1832,12 +1832,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b\nSet a = 13, b = 52\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
     "options": [
-      "35",
-      "20",
       "50",
-      "75"
+      "20",
+      "75",
+      "35"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "Initially a=13, b=52. First if: 13 < 52 is True, updated a=23. Second if: 52 < 23 is False, updated b=52. Sum a + b = 75."
   },
   {
@@ -1849,11 +1849,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer x, y, val\nSet x = 42, y = 21, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
     "options": [
       "20",
+      "35",
       "50",
-      "63",
-      "35"
+      "63"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "x (42) > 10 is True. In the inner block, y (21) > 20 is True. Result val = 63."
   },
   {
@@ -1864,12 +1864,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, res\nSet x = 90, y = 30\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
     "options": [
-      "35",
-      "50",
       "60",
-      "20"
+      "50",
+      "20",
+      "35"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Sum x + y = 120. Checking conditions in order: 120 > 60 is True, 90 > 30 is True. Corresponding branch evaluates to 60."
   },
   {
@@ -1880,12 +1880,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, ans\nSet x = 19, y = 38\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
     "options": [
-      "20",
-      "35",
+      "50",
       "19",
-      "50"
+      "20",
+      "35"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "x mod 2 = 1, y mod 2 = 0. Matching condition branch yields 19."
   },
   {
@@ -1896,12 +1896,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer x, y, score\nSet x = 55, y = 105\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
     "options": [
-      "20",
-      "35",
       "50",
-      "215"
+      "20",
+      "215",
+      "35"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 215."
   },
   {
@@ -1929,9 +1929,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 2\nEnd while\nPrint tot",
     "options": [
       "18",
-      "32",
+      "12",
       "24",
-      "12"
+      "32"
     ],
     "correctAnswer": 0,
     "explanation": "Loop runs for i values where i <= 5 with step 2. Summing i * 2 at each iteration results in tot = 18."
@@ -1944,12 +1944,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 3\nEnd while\nPrint val",
     "options": [
+      "18",
       "33",
       "24",
-      "32",
-      "18"
+      "32"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 3. The loop breaks when val > 25. Final val = 33."
   },
   {
@@ -1960,8 +1960,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 2)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
     "options": [
-      "24",
       "18",
+      "24",
       "32",
       "12"
     ],
@@ -1976,9 +1976,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 2\nEnd while\nPrint prod",
     "options": [
+      "32",
       "24",
       "18",
-      "32",
       "5"
     ],
     "correctAnswer": 3,
@@ -1992,12 +1992,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
     "options": [
-      "24",
-      "18",
       "35",
-      "32"
+      "32",
+      "24",
+      "18"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
   },
   {
@@ -2008,12 +2008,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 4\nEnd while\nPrint tot",
     "options": [
-      "12",
       "18",
+      "12",
       "32",
       "24"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "Loop runs for i values where i <= 5 with step 4. Summing i * 2 at each iteration results in tot = 12."
   },
   {
@@ -2024,12 +2024,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 2\nEnd while\nPrint val",
     "options": [
-      "18",
       "32",
-      "24",
-      "34"
+      "18",
+      "34",
+      "24"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 2. The loop breaks when val > 25. Final val = 34."
   },
   {
@@ -2041,8 +2041,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
     "options": [
       "24",
-      "18",
       "32",
+      "18",
       "80"
     ],
     "correctAnswer": 3,
@@ -2056,12 +2056,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 1\nEnd while\nPrint prod",
     "options": [
-      "18",
+      "40",
       "32",
-      "24",
-      "40"
+      "18",
+      "24"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "x starts at 1 and increases by 1 up to 7. Multiplying and taking mod 100 at each step yields prod = 40."
   },
   {
@@ -2072,10 +2072,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
     "options": [
-      "32",
+      "18",
       "35",
-      "24",
-      "18"
+      "32",
+      "24"
     ],
     "correctAnswer": 1,
     "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
@@ -2088,10 +2088,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 1\nEnd while\nPrint tot",
     "options": [
-      "24",
       "32",
+      "18",
       "30",
-      "18"
+      "24"
     ],
     "correctAnswer": 2,
     "explanation": "Loop runs for i values where i <= 5 with step 1. Summing i * 2 at each iteration results in tot = 30."
@@ -2105,11 +2105,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 4\nEnd while\nPrint val",
     "options": [
       "24",
-      "32",
       "12",
-      "18"
+      "18",
+      "32"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 4. The loop breaks when val > 25. Final val = 32."
   },
   {
@@ -2120,12 +2120,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 3)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
     "options": [
-      "24",
-      "18",
       "54",
-      "32"
+      "18",
+      "32",
+      "24"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 3. Adding (i + j) in each inner iteration sums to count = 54."
   },
   {
@@ -2138,8 +2138,8 @@ window.QUESTIONS_POOL = [
     "options": [
       "24",
       "28",
-      "18",
-      "32"
+      "32",
+      "18"
     ],
     "correctAnswer": 1,
     "explanation": "x starts at 1 and increases by 3 up to 7. Multiplying and taking mod 100 at each step yields prod = 28."
@@ -2153,9 +2153,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
     "options": [
       "18",
-      "32",
+      "24",
       "35",
-      "24"
+      "32"
     ],
     "correctAnswer": 2,
     "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
@@ -2168,12 +2168,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 3\nEnd while\nPrint tot",
     "options": [
-      "32",
-      "10",
+      "24",
       "18",
-      "24"
+      "32",
+      "10"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Loop runs for i values where i <= 5 with step 3. Summing i * 2 at each iteration results in tot = 10."
   },
   {
@@ -2185,9 +2185,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 1\nEnd while\nPrint val",
     "options": [
       "35",
-      "32",
       "24",
-      "18"
+      "18",
+      "32"
     ],
     "correctAnswer": 0,
     "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 1. The loop breaks when val > 25. Final val = 35."
@@ -2200,12 +2200,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
     "options": [
-      "24",
       "18",
       "80",
-      "32"
+      "32",
+      "24"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
   },
   {
@@ -2216,10 +2216,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 4\nEnd while\nPrint prod",
     "options": [
-      "32",
+      "24",
       "18",
       "5",
-      "24"
+      "32"
     ],
     "correctAnswer": 2,
     "explanation": "x starts at 1 and increases by 4 up to 7. Multiplying and taking mod 100 at each step yields prod = 5."
@@ -2233,8 +2233,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
     "options": [
       "18",
-      "32",
       "24",
+      "32",
       "35"
     ],
     "correctAnswer": 3,
@@ -2248,12 +2248,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 3)\n    Set tot = tot + (i * 2)\n    Set i = i + 2\nEnd while\nPrint tot",
     "options": [
-      "32",
-      "18",
+      "8",
       "24",
-      "8"
+      "32",
+      "18"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "Loop runs for i values where i <= 3 with step 2. Summing i * 2 at each iteration results in tot = 8."
   },
   {
@@ -2264,10 +2264,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 15\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 5\nEnd while\nPrint val",
     "options": [
-      "24",
+      "32",
       "30",
-      "18",
-      "32"
+      "24",
+      "18"
     ],
     "correctAnswer": 1,
     "explanation": "Starting with x = 15, each iteration adds x to val and decrements x by 5. The loop breaks when val > 25. Final val = 30."
@@ -2280,12 +2280,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
     "options": [
-      "24",
-      "18",
       "32",
-      "80"
+      "18",
+      "80",
+      "24"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
   },
   {
@@ -2297,11 +2297,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 4)\n    Set prod = (prod * x) mod 100\n    Set x = x + 5\nEnd while\nPrint prod",
     "options": [
       "32",
+      "24",
       "18",
-      "1",
-      "24"
+      "1"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "x starts at 1 and increases by 5 up to 4. Multiplying and taking mod 100 at each step yields prod = 1."
   },
   {
@@ -2312,12 +2312,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 9)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
     "options": [
-      "32",
       "25",
+      "24",
       "18",
-      "24"
+      "32"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Iterating from 1 to 9: even values add i, odd values add 1. Final sum s = 25."
   },
   {
@@ -2329,11 +2329,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 3)\n    Set tot = tot + (i * 2)\n    Set i = i + 3\nEnd while\nPrint tot",
     "options": [
       "24",
-      "32",
       "2",
+      "32",
       "18"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Loop runs for i values where i <= 3 with step 3. Summing i * 2 at each iteration results in tot = 2."
   },
   {
@@ -2344,10 +2344,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 15\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 6\nEnd while\nPrint val",
     "options": [
-      "32",
+      "24",
       "18",
       "27",
-      "24"
+      "32"
     ],
     "correctAnswer": 2,
     "explanation": "Starting with x = 15, each iteration adds x to val and decrements x by 6. The loop breaks when val > 25. Final val = 27."
@@ -2362,10 +2362,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "24",
       "18",
-      "80",
-      "32"
+      "32",
+      "80"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
   },
   {
@@ -2376,12 +2376,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 4)\n    Set prod = (prod * x) mod 100\n    Set x = x + 6\nEnd while\nPrint prod",
     "options": [
-      "18",
-      "24",
+      "1",
       "32",
-      "1"
+      "24",
+      "18"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "x starts at 1 and increases by 6 up to 4. Multiplying and taking mod 100 at each step yields prod = 1."
   },
   {
@@ -2392,12 +2392,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 5)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
     "options": [
-      "32",
       "24",
       "9",
-      "18"
+      "18",
+      "32"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Iterating from 1 to 5: even values add i, odd values add 1. Final sum s = 9."
   },
   {
@@ -2408,12 +2408,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(4, 5)\nPrint ans",
     "options": [
-      "12",
-      "10",
       "8",
-      "14"
+      "14",
+      "10",
+      "12"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Inside solve(4, 5): a becomes 4*2 + 5 = 13. b becomes 5*2 + 13 = 23. return b - a = 10."
   },
   {
@@ -2425,8 +2425,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 6\nSet q = compute(p)\nPrint p + q",
     "options": [
       "24",
-      "18",
       "22",
+      "18",
       "20"
     ],
     "correctAnswer": 3,
@@ -2440,12 +2440,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(3, 7)\nPrint out",
     "options": [
-      "8",
       "6",
       "10",
-      "4"
+      "4",
+      "8"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "helper(3, 7) computes sum of (i mod 7) for i from 1 to 3. Sum = 6."
   },
   {
@@ -2456,10 +2456,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(5))\nPrint res",
     "options": [
-      "9",
+      "13",
       "11",
-      "15",
-      "13"
+      "9",
+      "15"
     ],
     "correctAnswer": 1,
     "explanation": "Inner call g(5) = (5 * 2) - 3 = 7. Outer call g(7) = (7 * 2) - 3 = 11."
@@ -2472,8 +2472,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(8, 4)\nPrint ans",
     "options": [
-      "6",
       "10",
+      "6",
       "8",
       "12"
     ],
@@ -2490,10 +2490,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "8",
       "6",
-      "4",
-      "2"
+      "2",
+      "4"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Inside solve(7, 2): a becomes 7*2 + 2 = 16. b becomes 2*2 + 16 = 20. return b - a = 4."
   },
   {
@@ -2504,12 +2504,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 9\nSet q = compute(p)\nPrint p + q",
     "options": [
-      "30",
       "32",
-      "36",
-      "34"
+      "30",
+      "34",
+      "36"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "compute(9) returns 9*3 - 4 = 23. In the main scope, p remains 9 (pass by value). p + q = 9 + 23 = 32."
   },
   {
@@ -2520,10 +2520,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(2, 6)\nPrint out",
     "options": [
-      "5",
+      "7",
       "3",
-      "1",
-      "7"
+      "5",
+      "1"
     ],
     "correctAnswer": 1,
     "explanation": "helper(2, 6) computes sum of (i mod 6) for i from 1 to 2. Sum = 3."
@@ -2536,12 +2536,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(5))\nPrint res",
     "options": [
-      "15",
       "13",
-      "9",
-      "11"
+      "15",
+      "11",
+      "9"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "Inner call g(5) = (5 * 2) - 3 = 7. Outer call g(7) = (7 * 2) - 3 = 11."
   },
   {
@@ -2552,12 +2552,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(6, 4)\nPrint ans",
     "options": [
-      "8",
-      "4",
+      "2",
       "6",
-      "2"
+      "8",
+      "4"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "For u=6, v=4: u > v is True. Evaluating the active branch yields 4."
   },
   {
@@ -2569,9 +2569,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(4, 3)\nPrint ans",
     "options": [
       "6",
+      "4",
       "8",
-      "10",
-      "4"
+      "10"
     ],
     "correctAnswer": 0,
     "explanation": "Inside solve(4, 3): a becomes 4*2 + 3 = 11. b becomes 3*2 + 11 = 17. return b - a = 6."
@@ -2585,11 +2585,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 7\nSet q = compute(p)\nPrint p + q",
     "options": [
       "28",
-      "22",
+      "24",
       "26",
-      "24"
+      "22"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "compute(7) returns 7*3 - 4 = 17. In the main scope, p remains 7 (pass by value). p + q = 7 + 17 = 24."
   },
   {
@@ -2602,10 +2602,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "4",
       "8",
-      "10",
-      "6"
+      "6",
+      "10"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "helper(3, 4) computes sum of (i mod 4) for i from 1 to 3. Sum = 6."
   },
   {
@@ -2617,11 +2617,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(8))\nPrint res",
     "options": [
       "21",
-      "23",
+      "27",
       "25",
-      "27"
+      "23"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Inner call g(8) = (8 * 2) - 3 = 13. Outer call g(13) = (13 * 2) - 3 = 23."
   },
   {
@@ -2633,9 +2633,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(6, 3)\nPrint ans",
     "options": [
       "6",
-      "8",
+      "10",
       "4",
-      "10"
+      "8"
     ],
     "correctAnswer": 0,
     "explanation": "For u=6, v=3: u > v is True. Evaluating the active branch yields 6."
@@ -2649,11 +2649,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(5, 2)\nPrint ans",
     "options": [
       "6",
-      "8",
       "4",
+      "8",
       "2"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Inside solve(5, 2): a becomes 5*2 + 2 = 12. b becomes 2*2 + 12 = 16. return b - a = 4."
   },
   {
@@ -2664,12 +2664,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 9\nSet q = compute(p)\nPrint p + q",
     "options": [
-      "34",
-      "30",
       "36",
-      "32"
+      "30",
+      "32",
+      "34"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "compute(9) returns 9*3 - 4 = 23. In the main scope, p remains 9 (pass by value). p + q = 9 + 23 = 32."
   },
   {
@@ -2680,12 +2680,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(4, 6)\nPrint out",
     "options": [
-      "10",
-      "14",
       "8",
-      "12"
+      "14",
+      "12",
+      "10"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "helper(4, 6) computes sum of (i mod 6) for i from 1 to 4. Sum = 10."
   },
   {
@@ -2696,12 +2696,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(7))\nPrint res",
     "options": [
-      "21",
-      "17",
+      "19",
       "23",
-      "19"
+      "17",
+      "21"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "Inner call g(7) = (7 * 2) - 3 = 11. Outer call g(11) = (11 * 2) - 3 = 19."
   },
   {
@@ -2712,12 +2712,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(8, 3)\nPrint ans",
     "options": [
-      "8",
       "12",
       "10",
-      "14"
+      "14",
+      "8"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "For u=8, v=3: u > v is True. Evaluating the active branch yields 10."
   },
   {
@@ -2728,10 +2728,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(3, 5)\nPrint ans",
     "options": [
-      "12",
+      "14",
       "8",
       "10",
-      "14"
+      "12"
     ],
     "correctAnswer": 2,
     "explanation": "Inside solve(3, 5): a becomes 3*2 + 5 = 11. b becomes 5*2 + 11 = 21. return b - a = 10."
@@ -2744,12 +2744,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 6\nSet q = compute(p)\nPrint p + q",
     "options": [
-      "22",
-      "20",
+      "18",
       "24",
-      "18"
+      "22",
+      "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "compute(6) returns 6*3 - 4 = 14. In the main scope, p remains 6 (pass by value). p + q = 6 + 14 = 20."
   },
   {
@@ -2760,12 +2760,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(5, 4)\nPrint out",
     "options": [
-      "5",
       "7",
       "9",
-      "11"
+      "11",
+      "5"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "helper(5, 4) computes sum of (i mod 4) for i from 1 to 5. Sum = 7."
   },
   {
@@ -2776,12 +2776,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(7))\nPrint res",
     "options": [
-      "23",
-      "17",
+      "21",
       "19",
-      "21"
+      "17",
+      "23"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Inner call g(7) = (7 * 2) - 3 = 11. Outer call g(11) = (11 * 2) - 3 = 19."
   },
   {
@@ -2792,12 +2792,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(4, 4)\nPrint ans",
     "options": [
+      "2",
       "4",
       "0",
-      "2",
       "-2"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "For u=4, v=4: u > v is False. Evaluating the active branch yields 0."
   },
   {
@@ -2808,9 +2808,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(9, 4)\nPrint ans",
     "options": [
-      "6",
-      "12",
       "10",
+      "12",
+      "6",
       "8"
     ],
     "correctAnswer": 3,
@@ -2840,12 +2840,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(3, 6)\nPrint out",
     "options": [
-      "4",
-      "8",
+      "10",
       "6",
-      "10"
+      "8",
+      "4"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "helper(3, 6) computes sum of (i mod 6) for i from 1 to 3. Sum = 6."
   },
   {
@@ -2857,11 +2857,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(6))\nPrint res",
     "options": [
       "13",
-      "15",
       "19",
+      "15",
       "17"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Inner call g(6) = (6 * 2) - 3 = 9. Outer call g(9) = (9 * 2) - 3 = 15."
   },
   {
@@ -2872,12 +2872,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(5, 6)\nPrint ans",
     "options": [
-      "3",
       "5",
       "1",
-      "7"
+      "7",
+      "3"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "For u=5, v=6: u > v is False. Evaluating the active branch yields 3."
   },
   {
@@ -2888,12 +2888,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(4)\nPrint res",
     "options": [
-      "13",
+      "10",
       "11",
-      "9",
-      "10"
+      "13",
+      "9"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "rec_sum(4) recursively adds 4 + rec_sum(3) until base case x <= 1 returns 1. Total = 10."
   },
   {
@@ -2904,10 +2904,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(5)\nPrint ans",
     "options": [
-      "48",
+      "50",
       "47",
-      "46",
-      "50"
+      "48",
+      "46"
     ],
     "correctAnswer": 1,
     "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=5, fun(5) = 47."
@@ -2920,10 +2920,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(3)\nPrint ans",
     "options": [
+      "5",
       "3",
-      "7",
       "4",
-      "5"
+      "7"
     ],
     "correctAnswer": 2,
     "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=3, answer is 4."
@@ -2936,12 +2936,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(12)\nPrint val",
     "options": [
-      "22",
-      "23",
       "21",
-      "25"
+      "25",
+      "23",
+      "22"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "halve(12) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 22."
   },
   {
@@ -2952,12 +2952,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(4)\nPrint result",
     "options": [
-      "1",
-      "3",
       "2",
-      "5"
+      "1",
+      "5",
+      "3"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=4, result is 2."
   },
   {
@@ -2968,9 +2968,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(5)\nPrint res",
     "options": [
-      "18",
-      "15",
       "16",
+      "15",
+      "18",
       "14"
     ],
     "correctAnswer": 1,
@@ -2984,12 +2984,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(3)\nPrint ans",
     "options": [
-      "11",
       "10",
       "12",
+      "11",
       "14"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=3, fun(3) = 11."
   },
   {
@@ -3000,12 +3000,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(4)\nPrint ans",
     "options": [
+      "10",
       "6",
       "8",
-      "7",
-      "10"
+      "7"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=4, answer is 7."
   },
   {
@@ -3016,12 +3016,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(10)\nPrint val",
     "options": [
-      "17",
-      "19",
       "18",
-      "21"
+      "21",
+      "19",
+      "17"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "halve(10) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 18."
   },
   {
@@ -3032,10 +3032,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(6)\nPrint result",
     "options": [
-      "4",
+      "2",
       "3",
-      "6",
-      "2"
+      "4",
+      "6"
     ],
     "correctAnswer": 1,
     "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=6, result is 3."
@@ -3048,12 +3048,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(3)\nPrint res",
     "options": [
-      "5",
-      "9",
       "7",
-      "6"
+      "5",
+      "6",
+      "9"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "rec_sum(3) recursively adds 3 + rec_sum(2) until base case x <= 1 returns 1. Total = 6."
   },
   {
@@ -3066,10 +3066,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "22",
       "24",
-      "23",
-      "26"
+      "26",
+      "23"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=4, fun(4) = 23."
   },
   {
@@ -3080,12 +3080,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(5)\nPrint ans",
     "options": [
-      "15",
       "12",
       "11",
-      "13"
+      "13",
+      "15"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=5, answer is 12."
   },
   {
@@ -3097,11 +3097,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(6)\nPrint val",
     "options": [
       "9",
-      "13",
       "10",
-      "11"
+      "11",
+      "13"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "halve(6) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 10."
   },
   {
@@ -3112,12 +3112,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(4)\nPrint result",
     "options": [
-      "2",
-      "1",
       "5",
+      "1",
+      "2",
       "3"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=4, result is 2."
   },
   {
@@ -3128,12 +3128,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(5)\nPrint res",
     "options": [
-      "15",
       "16",
+      "18",
       "14",
-      "18"
+      "15"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "rec_sum(5) recursively adds 5 + rec_sum(4) until base case x <= 1 returns 1. Total = 15."
   },
   {
@@ -3144,12 +3144,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(6)\nPrint ans",
     "options": [
-      "94",
-      "96",
       "95",
-      "98"
+      "94",
+      "98",
+      "96"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=6, fun(6) = 95."
   },
   {
@@ -3160,10 +3160,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(3)\nPrint ans",
     "options": [
-      "5",
+      "3",
       "4",
       "7",
-      "3"
+      "5"
     ],
     "correctAnswer": 1,
     "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=3, answer is 4."
@@ -3176,12 +3176,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(8)\nPrint val",
     "options": [
-      "18",
-      "15",
+      "16",
       "14",
-      "16"
+      "15",
+      "18"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "halve(8) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 15."
   },
   {
@@ -3192,9 +3192,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(5)\nPrint result",
     "options": [
+      "6",
       "2",
       "4",
-      "6",
       "3"
     ],
     "correctAnswer": 3,
@@ -3208,12 +3208,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(4)\nPrint res",
     "options": [
+      "10",
       "13",
       "11",
-      "10",
       "9"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "rec_sum(4) recursively adds 4 + rec_sum(3) until base case x <= 1 returns 1. Total = 10."
   },
   {
@@ -3224,10 +3224,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(5)\nPrint ans",
     "options": [
-      "46",
-      "47",
       "50",
-      "48"
+      "47",
+      "48",
+      "46"
     ],
     "correctAnswer": 1,
     "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=5, fun(5) = 47."
@@ -3240,12 +3240,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(3)\nPrint ans",
     "options": [
-      "7",
-      "4",
+      "5",
       "3",
-      "5"
+      "4",
+      "7"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=3, answer is 4."
   },
   {
@@ -3256,12 +3256,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(12)\nPrint val",
     "options": [
-      "22",
       "25",
+      "23",
       "21",
-      "23"
+      "22"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "halve(12) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 22."
   },
   {
@@ -3272,12 +3272,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(4)\nPrint result",
     "options": [
-      "3",
       "2",
-      "1",
-      "5"
+      "5",
+      "3",
+      "1"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=4, result is 2."
   },
   {
@@ -3321,11 +3321,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(4)\nPrint ans",
     "options": [
       "6",
-      "7",
+      "10",
       "8",
-      "10"
+      "7"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=4, answer is 7."
   },
   {
@@ -3337,8 +3337,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(10)\nPrint val",
     "options": [
       "18",
-      "21",
       "17",
+      "21",
       "19"
     ],
     "correctAnswer": 0,
@@ -3352,9 +3352,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(6)\nPrint result",
     "options": [
-      "6",
-      "3",
       "4",
+      "3",
+      "6",
       "2"
     ],
     "correctAnswer": 1,
@@ -3368,12 +3368,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, res\nSet u = 6, v = 3\nSet res = (u + v) ^ (u & v)\nPrint res",
     "options": [
-      "11",
-      "9",
       "13",
-      "15"
+      "15",
+      "11",
+      "9"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "(u + v) = 9. (u & v) = 2. (9) ^ (2) = 11."
   },
   {
@@ -3384,9 +3384,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 10, v = 4\nSet ans = (u * 2) & (v << 2)\nPrint ans",
     "options": [
-      "14",
-      "18",
       "20",
+      "18",
+      "14",
       "16"
     ],
     "correctAnswer": 3,
@@ -3400,12 +3400,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, val\nSet u = 12, v = 5\nSet val = ((u ^ v) mod 8) + (u >> 1)\nPrint val",
     "options": [
+      "7",
       "9",
       "11",
-      "7",
       "5"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "u ^ v = 9. (9) mod 8 = 1. u >> 1 = 6. val = 1 + 6 = 7."
   },
   {
@@ -3416,12 +3416,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, out\nSet u = 8, v = 2\nSet out = (u | 7) - (v & 3)\nPrint out",
     "options": [
-      "17",
-      "11",
       "15",
-      "13"
+      "13",
+      "17",
+      "11"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "(u | 7) = 15. (v & 3) = 2. Difference = 15 - 2 = 13."
   },
   {
@@ -3432,12 +3432,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 15, v = 6\nSet ans = (u mod v) ^ (u / v)\nPrint ans",
     "options": [
-      "1",
+      "-1",
       "5",
-      "3",
-      "-1"
+      "1",
+      "3"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "u mod v = 3. Integer division u / v = 2. (3) ^ (2) = 1."
   },
   {
@@ -3448,12 +3448,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, res\nSet u = 7, v = 3\nSet res = (u + v) ^ (u & v)\nPrint res",
     "options": [
+      "11",
       "13",
       "7",
-      "9",
-      "11"
+      "9"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "(u + v) = 10. (u & v) = 3. (10) ^ (3) = 9."
   },
   {
@@ -3466,8 +3466,8 @@ window.QUESTIONS_POOL = [
     "options": [
       "20",
       "22",
-      "24",
-      "18"
+      "18",
+      "24"
     ],
     "correctAnswer": 0,
     "explanation": "u * 2 = 28. v << 2 = 20. Bitwise AND (28 & 20) = 20."
@@ -3481,11 +3481,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer u, v, val\nSet u = 9, v = 2\nSet val = ((u ^ v) mod 8) + (u >> 1)\nPrint val",
     "options": [
       "11",
-      "9",
       "7",
-      "5"
+      "5",
+      "9"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "u ^ v = 11. (11) mod 8 = 3. u >> 1 = 4. val = 3 + 4 = 7."
   },
   {
@@ -3496,10 +3496,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, out\nSet u = 18, v = 4\nSet out = (u | 7) - (v & 3)\nPrint out",
     "options": [
+      "21",
       "27",
-      "25",
       "23",
-      "21"
+      "25"
     ],
     "correctAnswer": 2,
     "explanation": "(u | 7) = 23. (v & 3) = 0. Difference = 23 - 0 = 23."
@@ -3512,9 +3512,9 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 11, v = 3\nSet ans = (u mod v) ^ (u / v)\nPrint ans",
     "options": [
+      "5",
       "-1",
       "3",
-      "5",
       "1"
     ],
     "correctAnswer": 3,
@@ -3528,12 +3528,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, res\nSet u = 16, v = 5\nSet res = (u + v) ^ (u & v)\nPrint res",
     "options": [
-      "25",
       "21",
-      "23",
-      "19"
+      "25",
+      "19",
+      "23"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "(u + v) = 21. (u & v) = 0. (21) ^ (0) = 21."
   },
   {
@@ -3544,12 +3544,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 20, v = 6\nSet ans = (u * 2) & (v << 2)\nPrint ans",
     "options": [
-      "12",
       "6",
+      "8",
       "10",
-      "8"
+      "12"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "u * 2 = 40. v << 2 = 24. Bitwise AND (40 & 24) = 8."
   },
   {
@@ -3560,12 +3560,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, val\nSet u = 13, v = 4\nSet val = ((u ^ v) mod 8) + (u >> 1)\nPrint val",
     "options": [
-      "7",
       "11",
       "5",
+      "7",
       "9"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "u ^ v = 9. (9) mod 8 = 1. u >> 1 = 6. val = 1 + 6 = 7."
   },
   {
@@ -3576,12 +3576,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, out\nSet u = 17, v = 3\nSet out = (u | 7) - (v & 3)\nPrint out",
     "options": [
+      "22",
       "18",
-      "20",
       "24",
-      "22"
+      "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "(u | 7) = 23. (v & 3) = 3. Difference = 23 - 3 = 20."
   },
   {
@@ -3592,12 +3592,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 22, v = 5\nSet ans = (u mod v) ^ (u / v)\nPrint ans",
     "options": [
-      "10",
-      "8",
       "6",
-      "4"
+      "4",
+      "8",
+      "10"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "u mod v = 2. Integer division u / v = 4. (2) ^ (4) = 6."
   },
   {
@@ -3608,12 +3608,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, res\nSet u = 19, v = 4\nSet res = (u + v) ^ (u & v)\nPrint res",
     "options": [
-      "25",
-      "27",
       "21",
-      "23"
+      "23",
+      "25",
+      "27"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "(u + v) = 23. (u & v) = 0. (23) ^ (0) = 23."
   },
   {
@@ -3624,12 +3624,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 25, v = 7\nSet ans = (u * 2) & (v << 2)\nPrint ans",
     "options": [
-      "14",
       "20",
       "18",
-      "16"
+      "16",
+      "14"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "u * 2 = 50. v << 2 = 28. Bitwise AND (50 & 28) = 16."
   },
   {
@@ -3656,12 +3656,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, out\nSet u = 24, v = 6\nSet out = (u | 7) - (v & 3)\nPrint out",
     "options": [
-      "31",
       "29",
-      "33",
-      "27"
+      "27",
+      "31",
+      "33"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "(u | 7) = 31. (v & 3) = 2. Difference = 31 - 2 = 29."
   },
   {
@@ -3688,12 +3688,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, res\nSet u = 23, v = 5\nSet res = (u + v) ^ (u & v)\nPrint res",
     "options": [
-      "25",
+      "23",
       "27",
-      "29",
-      "23"
+      "25",
+      "29"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "(u + v) = 28. (u & v) = 5. (28) ^ (5) = 25."
   },
   {
@@ -3704,12 +3704,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 28, v = 6\nSet ans = (u * 2) & (v << 2)\nPrint ans",
     "options": [
-      "28",
       "22",
-      "24",
-      "26"
+      "28",
+      "26",
+      "24"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "u * 2 = 56. v << 2 = 24. Bitwise AND (56 & 24) = 24."
   },
   {
@@ -3721,9 +3721,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer u, v, val\nSet u = 26, v = 4\nSet val = ((u ^ v) mod 8) + (u >> 1)\nPrint val",
     "options": [
       "19",
-      "21",
+      "17",
       "23",
-      "17"
+      "21"
     ],
     "correctAnswer": 0,
     "explanation": "u ^ v = 30. (30) mod 8 = 6. u >> 1 = 13. val = 6 + 13 = 19."
@@ -3736,12 +3736,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, out\nSet u = 30, v = 8\nSet out = (u | 7) - (v & 3)\nPrint out",
     "options": [
-      "31",
-      "33",
       "29",
-      "35"
+      "31",
+      "35",
+      "33"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "(u | 7) = 31. (v & 3) = 0. Difference = 31 - 0 = 31."
   },
   {
@@ -3752,10 +3752,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, ans\nSet u = 29, v = 5\nSet ans = (u mod v) ^ (u / v)\nPrint ans",
     "options": [
+      "5",
       "3",
-      "-1",
       "1",
-      "5"
+      "-1"
     ],
     "correctAnswer": 2,
     "explanation": "u mod v = 4. Integer division u / v = 5. (4) ^ (5) = 1."
@@ -3768,12 +3768,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer u, v, res\nSet u = 32, v = 6\nSet res = (u + v) ^ (u & v)\nPrint res",
     "options": [
-      "40",
       "42",
-      "38",
-      "36"
+      "40",
+      "36",
+      "38"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "(u + v) = 38. (u & v) = 0. (38) ^ (0) = 38."
   },
   {
@@ -3786,8 +3786,8 @@ window.QUESTIONS_POOL = [
     "options": [
       "4",
       "8",
-      "2",
-      "6"
+      "6",
+      "2"
     ],
     "correctAnswer": 0,
     "explanation": "u * 2 = 70. v << 2 = 28. Bitwise AND (70 & 28) = 4."
@@ -3801,11 +3801,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer u, v, val\nSet u = 31, v = 5\nSet val = ((u ^ v) mod 8) + (u >> 1)\nPrint val",
     "options": [
       "19",
-      "21",
       "17",
-      "15"
+      "15",
+      "21"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "u ^ v = 26. (26) mod 8 = 2. u >> 1 = 15. val = 2 + 15 = 17."
   },
   {
@@ -3817,11 +3817,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer u, v, out\nSet u = 34, v = 6\nSet out = (u | 7) - (v & 3)\nPrint out",
     "options": [
       "41",
-      "35",
       "39",
-      "37"
+      "37",
+      "35"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "(u | 7) = 39. (v & 3) = 2. Difference = 39 - 2 = 37."
   },
   {
@@ -3848,12 +3848,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 3)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
     "options": [
-      "12",
       "10",
       "9",
+      "12",
       "11"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Loop calls r_sum(i) for i=1..3. The values are summed together resulting in 10."
   },
   {
@@ -3864,12 +3864,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(4)\nPrint ans",
     "options": [
-      "21",
-      "19",
       "22",
-      "20"
+      "20",
+      "21",
+      "19"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "rec_loop(4) sums 1..x for each level down to 1. Total sum = 20."
   },
   {
@@ -3882,10 +3882,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "29",
       "28",
-      "26",
-      "27"
+      "27",
+      "26"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "power(3, 3) computes 3^3 recursively: 27."
   },
   {
@@ -3897,11 +3897,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(16, 4)\nPrint ans",
     "options": [
       "5",
-      "4",
+      "3",
       "6",
-      "3"
+      "4"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Classic Euclidean algorithm to find GCD of 16 and 4. GCD is 4."
   },
   {
@@ -3912,12 +3912,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(26)\nPrint bits",
     "options": [
-      "2",
       "3",
       "4",
+      "2",
       "5"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "count_set_bits(26) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 26 is 11010, which has 3 set bits (1s)."
   },
   {
@@ -3929,11 +3929,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 3)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
     "options": [
       "12",
+      "10",
       "11",
-      "9",
-      "10"
+      "9"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "Loop calls r_sum(i) for i=1..3. The values are summed together resulting in 10."
   },
   {
@@ -3944,10 +3944,10 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(4)\nPrint ans",
     "options": [
-      "22",
+      "21",
       "19",
       "20",
-      "21"
+      "22"
     ],
     "correctAnswer": 2,
     "explanation": "rec_loop(4) sums 1..x for each level down to 1. Total sum = 20."
@@ -3960,12 +3960,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(5, 2)\nPrint val",
     "options": [
-      "25",
-      "26",
       "24",
-      "27"
+      "26",
+      "27",
+      "25"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "power(5, 2) computes 5^2 recursively: 25."
   },
   {
@@ -3976,12 +3976,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(12, 8)\nPrint ans",
     "options": [
-      "5",
       "4",
-      "3",
-      "6"
+      "6",
+      "5",
+      "3"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Classic Euclidean algorithm to find GCD of 12 and 8. GCD is 4."
   },
   {
@@ -3992,12 +3992,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(22)\nPrint bits",
     "options": [
-      "5",
-      "4",
       "2",
-      "3"
+      "3",
+      "4",
+      "5"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "count_set_bits(22) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 22 is 10110, which has 3 set bits (1s)."
   },
   {
@@ -4009,11 +4009,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 5)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
     "options": [
       "36",
-      "37",
       "34",
-      "35"
+      "35",
+      "37"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "Loop calls r_sum(i) for i=1..5. The values are summed together resulting in 35."
   },
   {
@@ -4024,12 +4024,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(3)\nPrint ans",
     "options": [
-      "10",
       "9",
+      "12",
       "11",
-      "12"
+      "10"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "rec_loop(3) sums 1..x for each level down to 1. Total sum = 10."
   },
   {
@@ -4042,8 +4042,8 @@ window.QUESTIONS_POOL = [
     "options": [
       "4",
       "6",
-      "5",
-      "3"
+      "3",
+      "5"
     ],
     "correctAnswer": 0,
     "explanation": "power(4, 1) computes 4^1 recursively: 4."
@@ -4074,10 +4074,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "3",
       "4",
-      "1",
-      "2"
+      "2",
+      "1"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "count_set_bits(17) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 17 is 10001, which has 2 set bits (1s)."
   },
   {
@@ -4088,12 +4088,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 4)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
     "options": [
+      "19",
       "22",
-      "20",
       "21",
-      "19"
+      "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Loop calls r_sum(i) for i=1..4. The values are summed together resulting in 20."
   },
   {
@@ -4105,9 +4105,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(5)\nPrint ans",
     "options": [
       "35",
-      "34",
       "36",
-      "37"
+      "37",
+      "34"
     ],
     "correctAnswer": 0,
     "explanation": "rec_loop(5) sums 1..x for each level down to 1. Total sum = 35."
@@ -4120,12 +4120,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(3, 3)\nPrint val",
     "options": [
-      "27",
       "29",
+      "27",
       "28",
       "26"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "power(3, 3) computes 3^3 recursively: 27."
   },
   {
@@ -4136,12 +4136,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(16, 6)\nPrint ans",
     "options": [
-      "2",
-      "3",
       "4",
-      "1"
+      "1",
+      "2",
+      "3"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Classic Euclidean algorithm to find GCD of 16 and 6. GCD is 2."
   },
   {
@@ -4152,12 +4152,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(27)\nPrint bits",
     "options": [
-      "4",
-      "6",
       "3",
-      "5"
+      "5",
+      "6",
+      "4"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "count_set_bits(27) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 27 is 11011, which has 4 set bits (1s)."
   },
   {
@@ -4168,12 +4168,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer r_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + r_sum(x - 1)\nEnd function r_sum\n\nInteger tot, i\nSet tot = 0\nfor(i = 1 to 3)\n    Set tot = tot + r_sum(i)\nEnd for\nPrint tot",
     "options": [
-      "9",
+      "10",
       "11",
-      "12",
-      "10"
+      "9",
+      "12"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "Loop calls r_sum(i) for i=1..3. The values are summed together resulting in 10."
   },
   {
@@ -4184,12 +4184,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(4)\nPrint ans",
     "options": [
-      "22",
-      "21",
       "19",
-      "20"
+      "20",
+      "22",
+      "21"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "rec_loop(4) sums 1..x for each level down to 1. Total sum = 20."
   },
   {
@@ -4200,12 +4200,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(5, 1)\nPrint val",
     "options": [
-      "6",
-      "5",
       "4",
-      "7"
+      "7",
+      "5",
+      "6"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "power(5, 1) computes 5^1 recursively: 5."
   },
   {
@@ -4216,12 +4216,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(12, 8)\nPrint ans",
     "options": [
-      "3",
-      "4",
       "5",
-      "6"
+      "6",
+      "3",
+      "4"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Classic Euclidean algorithm to find GCD of 12 and 8. GCD is 4."
   },
   {
@@ -4264,8 +4264,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer rec_loop(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    Integer s, i\n    Set s = 0\n    for(i = 1 to x)\n        Set s = s + i\n    End for\n    return s + rec_loop(x - 1)\nEnd function rec_loop\n\nInteger ans\nSet ans = rec_loop(3)\nPrint ans",
     "options": [
-      "12",
       "11",
+      "12",
       "10",
       "9"
     ],
@@ -4281,8 +4281,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer power(Integer a, Integer b)\n    if(b <= 0)\n        return 1\n    End if\n    return a * power(a, b - 1)\nEnd function power\n\nInteger val\nSet val = power(4, 2)\nPrint val",
     "options": [
       "18",
-      "17",
       "15",
+      "17",
       "16"
     ],
     "correctAnswer": 3,
@@ -4296,12 +4296,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve_gcd(Integer a, Integer b)\n    if(b EQUALS 0)\n        return a\n    End if\n    return solve_gcd(b, a mod b)\nEnd function solve_gcd\n\nInteger ans\nSet ans = solve_gcd(20, 2)\nPrint ans",
     "options": [
-      "3",
-      "4",
       "2",
+      "4",
+      "3",
       "1"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Classic Euclidean algorithm to find GCD of 20 and 2. GCD is 2."
   },
   {
@@ -4312,12 +4312,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer count_set_bits(Integer n)\n    if(n <= 0)\n        return 0\n    End if\n    return (n mod 2) + count_set_bits(n / 2)\nEnd function count_set_bits\n\nInteger bits\nSet bits = count_set_bits(17)\nPrint bits",
     "options": [
-      "3",
       "4",
       "2",
-      "1"
+      "1",
+      "3"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "count_set_bits(17) extracts binary bits by taking mod 2 and integer dividing by 2. The binary representation of 17 is 10001, which has 2 set bits (1s)."
   },
   {
@@ -4328,12 +4328,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, out\nSet a = 18, b = 12, c = 6\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
     "options": [
-      "10",
       "12",
       "8",
+      "10",
       "15"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "(a & b) = 0. (b ^ c) = 10. (a mod c) = 0. Result = 0 + 10 - 0 = 10."
   },
   {
@@ -4344,12 +4344,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 25, b = 15, c = 5\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
     "options": [
-      "50",
       "48",
       "55",
-      "52"
+      "52",
+      "50"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "Testing conditions: (25 > 15 AND 15 > 5) is True. Branch taken computes 50."
   },
   {
@@ -4361,9 +4361,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer val, x\nSet val = 0, x = 16\nwhile(x > 0)\n    Set val = val + (x ^ 8)\n    Set x = x - 5\nEnd while\nPrint val",
     "options": [
       "50",
+      "48",
       "52",
-      "55",
-      "48"
+      "55"
     ],
     "correctAnswer": 0,
     "explanation": "x starts at 16 and steps down by 5. Accumulating (x ^ 8) at each step yields 50."
@@ -4377,11 +4377,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(8, 4)\nPrint ans",
     "options": [
       "30",
-      "34",
       "32",
-      "37"
+      "37",
+      "34"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(8, 4) = 32."
   },
   {
@@ -4392,12 +4392,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, r\nSet a = 16, b = 28, c = 7\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
     "options": [
-      "41",
       "46",
-      "39",
-      "43"
+      "43",
+      "41",
+      "39"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "a << 1 = 32. b >> 1 = 14. Sum = 46. XOR with c (7) gives 41."
   },
   {
@@ -4409,11 +4409,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, out\nSet a = 21, b = 14, c = 7\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
     "options": [
       "11",
-      "13",
       "15",
-      "18"
+      "18",
+      "13"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "(a & b) = 4. (b ^ c) = 9. (a mod c) = 0. Result = 4 + 9 - 0 = 13."
   },
   {
@@ -4425,9 +4425,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, res\nSet a = 35, b = 25, c = 5\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
     "options": [
       "50",
-      "55",
+      "48",
       "52",
-      "48"
+      "55"
     ],
     "correctAnswer": 0,
     "explanation": "Testing conditions: (35 > 25 AND 25 > 5) is True. Branch taken computes 50."
@@ -4440,12 +4440,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 24\nwhile(x > 0)\n    Set val = val + (x ^ 8)\n    Set x = x - 4\nEnd while\nPrint val",
     "options": [
-      "82",
       "86",
+      "84",
       "89",
-      "84"
+      "82"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "x starts at 24 and steps down by 4. Accumulating (x ^ 8) at each step yields 84."
   },
   {
@@ -4456,12 +4456,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(6, 3)\nPrint ans",
     "options": [
+      "16",
       "23",
       "18",
-      "16",
       "20"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(6, 3) = 18."
   },
   {
@@ -4474,10 +4474,10 @@ window.QUESTIONS_POOL = [
     "options": [
       "59",
       "52",
-      "54",
-      "56"
+      "56",
+      "54"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "a << 1 = 54. b >> 1 = 9. Sum = 63. XOR with c (9) gives 54."
   },
   {
@@ -4489,8 +4489,8 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, out\nSet a = 24, b = 36, c = 12\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
     "options": [
       "40",
-      "38",
       "45",
+      "38",
       "42"
     ],
     "correctAnswer": 0,
@@ -4504,12 +4504,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 50, b = 30, c = 10\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
     "options": [
-      "205",
-      "198",
       "202",
-      "200"
+      "200",
+      "198",
+      "205"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "Testing conditions: (50 > 30 AND 30 > 10) is True. Branch taken computes 200."
   },
   {
@@ -4520,12 +4520,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 22\nwhile(x > 0)\n    Set val = val + (x ^ 5)\n    Set x = x - 3\nEnd while\nPrint val",
     "options": [
-      "92",
-      "97",
       "94",
-      "90"
+      "90",
+      "92",
+      "97"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "x starts at 22 and steps down by 3. Accumulating (x ^ 5) at each step yields 92."
   },
   {
@@ -4536,8 +4536,8 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(5, 4)\nPrint ans",
     "options": [
-      "25",
       "18",
+      "25",
       "22",
       "20"
     ],
@@ -4552,12 +4552,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, r\nSet a = 36, b = 24, c = 6\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
     "options": [
-      "84",
-      "80",
       "82",
-      "87"
+      "80",
+      "87",
+      "84"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "a << 1 = 72. b >> 1 = 12. Sum = 84. XOR with c (6) gives 82."
   },
   {
@@ -4568,12 +4568,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, out\nSet a = 42, b = 28, c = 14\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
     "options": [
-      "31",
       "24",
       "26",
-      "28"
+      "28",
+      "31"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "(a & b) = 8. (b ^ c) = 18. (a mod c) = 0. Result = 8 + 18 - 0 = 26."
   },
   {
@@ -4584,12 +4584,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 54, b = 18, c = 9\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
     "options": [
-      "324",
+      "326",
       "329",
-      "322",
-      "326"
+      "324",
+      "322"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Testing conditions: (54 > 18 AND 18 > 9) is True. Branch taken computes 324."
   },
   {
@@ -4601,11 +4601,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer val, x\nSet val = 0, x = 30\nwhile(x > 0)\n    Set val = val + (x ^ 20)\n    Set x = x - 10\nEnd while\nPrint val",
     "options": [
       "45",
-      "40",
+      "42",
       "38",
-      "42"
+      "40"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "x starts at 30 and steps down by 10. Accumulating (x ^ 20) at each step yields 40."
   },
   {
@@ -4617,9 +4617,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(6, 4)\nPrint ans",
     "options": [
       "24",
-      "29",
+      "22",
       "26",
-      "22"
+      "29"
     ],
     "correctAnswer": 0,
     "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(6, 4) = 24."
@@ -4632,12 +4632,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, r\nSet a = 44, b = 22, c = 11\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
     "options": [
+      "102",
       "104",
-      "106",
       "109",
-      "102"
+      "106"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "a << 1 = 88. b >> 1 = 11. Sum = 99. XOR with c (11) gives 104."
   },
   {
@@ -4649,9 +4649,9 @@ window.QUESTIONS_POOL = [
     "code": "Integer a, b, c, out\nSet a = 15, b = 45, c = 30\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
     "options": [
       "51",
-      "47",
+      "54",
       "49",
-      "54"
+      "47"
     ],
     "correctAnswer": 2,
     "explanation": "(a & b) = 13. (b ^ c) = 51. (a mod c) = 15. Result = 13 + 51 - 15 = 49."
@@ -4664,12 +4664,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 26, b = 39, c = 13\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
     "options": [
+      "54",
       "57",
-      "52",
       "50",
-      "54"
+      "52"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "Testing conditions: (26 > 39 AND 39 > 13) is False. Branch taken computes 52."
   },
   {
@@ -4680,12 +4680,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer val, x\nSet val = 0, x = 19\nwhile(x > 0)\n    Set val = val + (x ^ 19)\n    Set x = x - 4\nEnd while\nPrint val",
     "options": [
-      "90",
       "88",
       "93",
-      "86"
+      "86",
+      "90"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "x starts at 19 and steps down by 4. Accumulating (x ^ 19) at each step yields 88."
   },
   {
@@ -4697,11 +4697,11 @@ window.QUESTIONS_POOL = [
     "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(10, 5)\nPrint ans",
     "options": [
       "52",
+      "50",
       "55",
-      "48",
-      "50"
+      "48"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(10, 5) = 50."
   },
   {
@@ -4712,12 +4712,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, r\nSet a = 64, b = 32, c = 16\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
     "options": [
-      "133",
-      "130",
       "126",
-      "128"
+      "133",
+      "128",
+      "130"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "a << 1 = 128. b >> 1 = 16. Sum = 144. XOR with c (16) gives 128."
   },
   {
@@ -4728,12 +4728,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, out\nSet a = 70, b = 35, c = 7\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
     "options": [
-      "38",
-      "36",
       "43",
-      "40"
+      "36",
+      "40",
+      "38"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(a & b) = 2. (b ^ c) = 36. (a mod c) = 0. Result = 2 + 36 - 0 = 38."
   },
   {
@@ -4744,12 +4744,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, res\nSet a = 80, b = 40, c = 10\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
     "options": [
-      "402",
-      "398",
       "400",
-      "405"
+      "398",
+      "405",
+      "402"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Testing conditions: (80 > 40 AND 40 > 10) is True. Branch taken computes 400."
   },
   {
@@ -4776,12 +4776,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(18, 5)\nPrint ans",
     "options": [
-      "92",
       "95",
-      "88",
-      "90"
+      "92",
+      "90",
+      "88"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(18, 5) = 90."
   },
   {
@@ -4792,12 +4792,12 @@ window.QUESTIONS_POOL = [
     "question": "What will be the output of the following pseudocode?",
     "code": "Integer a, b, c, r\nSet a = 100, b = 50, c = 25\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
     "options": [
+      "246",
       "250",
-      "248",
       "253",
-      "246"
+      "248"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "a << 1 = 200. b >> 1 = 25. Sum = 225. XOR with c (25) gives 248."
   }
 ];

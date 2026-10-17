@@ -12,12 +12,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, val\nSet x = 15, y = 25, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
       "options": [
-        "20",
         "35",
-        "50",
-        "40"
+        "20",
+        "40",
+        "50"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "x (15) > 10 is True. In the inner block, y (25) > 20 is True. Result val = 40."
     },
     {
@@ -30,10 +30,10 @@
       "options": [
         "35",
         "50",
-        "30",
-        "20"
+        "20",
+        "30"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 3,
       "explanation": "Sum x + y = 50. Checking conditions in order: 50 > 60 is False, 40 > 10 is True. Corresponding branch evaluates to 30."
     },
     {
@@ -44,12 +44,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, ans\nSet x = 18, y = 18\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
       "options": [
-        "35",
-        "20",
         "36",
-        "50"
+        "50",
+        "20",
+        "35"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 0,
       "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 36."
     },
     {
@@ -60,12 +60,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, score\nSet x = 30, y = 40\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
       "options": [
-        "100",
-        "50",
         "35",
-        "20"
+        "100",
+        "20",
+        "50"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 100."
     },
     {
@@ -76,12 +76,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer a, b\nSet a = 12, b = 8\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
       "options": [
+        "50",
         "35",
         "25",
-        "50",
         "20"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 2,
       "explanation": "Initially a=12, b=8. First if: 12 < 8 is False, updated a=12. Second if: 8 < 12 is True, updated b=13. Sum a + b = 25."
     },
     {
@@ -92,12 +92,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, val\nSet x = 50, y = 50, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
       "options": [
-        "35",
-        "100",
         "50",
-        "20"
+        "20",
+        "35",
+        "100"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "x (50) > 10 is True. In the inner block, y (50) > 20 is True. Result val = 100."
     },
     {
@@ -108,12 +108,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, res\nSet x = 9, y = 27\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
       "options": [
+        "18",
         "50",
         "35",
-        "20",
-        "18"
+        "20"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 0,
       "explanation": "Sum x + y = 36. Checking conditions in order: 36 > 60 is False, 9 > 27 is False. Corresponding branch evaluates to 18."
     },
     {
@@ -124,12 +124,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, ans\nSet x = 24, y = 16\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
       "options": [
-        "50",
-        "35",
+        "20",
         "40",
-        "20"
+        "50",
+        "35"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 40."
     },
     {
@@ -140,12 +140,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, score\nSet x = 35, y = 65\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
       "options": [
-        "20",
         "50",
-        "35",
-        "135"
+        "20",
+        "135",
+        "35"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 135."
     },
     {
@@ -157,11 +157,11 @@
       "code": "Integer a, b\nSet a = 8, b = 64\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
       "options": [
         "35",
-        "82",
         "50",
-        "20"
+        "20",
+        "82"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Initially a=8, b=64. First if: 8 < 64 is True, updated a=18. Second if: 64 < 18 is False, updated b=64. Sum a + b = 82."
     },
     {
@@ -172,12 +172,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, val\nSet x = 14, y = 21, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
       "options": [
-        "20",
-        "50",
         "35",
-        "15"
+        "15",
+        "50",
+        "20"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 0,
       "explanation": "x (14) > 10 is True. In the inner block, y (21) > 20 is True. Result val = 35."
     },
     {
@@ -188,12 +188,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, res\nSet x = 33, y = 11\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
       "options": [
-        "22",
-        "20",
         "35",
-        "50"
+        "22",
+        "50",
+        "20"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Sum x + y = 44. Checking conditions in order: 44 > 60 is False, 33 > 11 is True. Corresponding branch evaluates to 22."
     },
     {
@@ -204,12 +204,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, ans\nSet x = 20, y = 20\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
       "options": [
-        "20",
-        "50",
         "35",
-        "40"
+        "20",
+        "40",
+        "50"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 40."
     },
     {
@@ -221,11 +221,11 @@
       "code": "Integer x, y, score\nSet x = 40, y = 15\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
       "options": [
         "50",
-        "55",
         "20",
-        "35"
+        "35",
+        "55"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "x > y is True. Executing corresponding branch updates variable and computes score = 55."
     },
     {
@@ -252,12 +252,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, val\nSet x = 28, y = 14, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
       "options": [
-        "35",
         "20",
-        "50",
-        "14"
+        "14",
+        "35",
+        "50"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 1,
       "explanation": "x (28) > 10 is True. In the inner block, y (14) > 20 is False. Result val = 14."
     },
     {
@@ -268,10 +268,10 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, res\nSet x = 60, y = 20\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
       "options": [
-        "20",
+        "35",
         "50",
         "40",
-        "35"
+        "20"
       ],
       "correctAnswer": 2,
       "explanation": "Sum x + y = 80. Checking conditions in order: 80 > 60 is True, 60 > 20 is True. Corresponding branch evaluates to 40."
@@ -284,8 +284,8 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, ans\nSet x = 16, y = 32\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
       "options": [
-        "35",
         "50",
+        "35",
         "20",
         "48"
       ],
@@ -300,12 +300,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, score\nSet x = 25, y = 70\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
       "options": [
-        "50",
         "120",
-        "35",
-        "20"
+        "50",
+        "20",
+        "35"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 120."
     },
     {
@@ -316,10 +316,10 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer a, b\nSet a = 10, b = 100\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
       "options": [
-        "35",
+        "20",
         "120",
-        "50",
-        "20"
+        "35",
+        "50"
       ],
       "correctAnswer": 1,
       "explanation": "Initially a=10, b=100. First if: 10 < 100 is True, updated a=20. Second if: 100 < 20 is False, updated b=100. Sum a + b = 120."
@@ -332,12 +332,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, val\nSet x = 17, y = 34, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
       "options": [
-        "20",
         "35",
         "50",
-        "51"
+        "51",
+        "20"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "x (17) > 10 is True. In the inner block, y (34) > 20 is True. Result val = 51."
     },
     {
@@ -348,12 +348,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, res\nSet x = 80, y = 40\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
       "options": [
+        "50",
         "35",
         "20",
-        "60",
-        "50"
+        "60"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 3,
       "explanation": "Sum x + y = 120. Checking conditions in order: 120 > 60 is True, 80 > 40 is True. Corresponding branch evaluates to 60."
     },
     {
@@ -364,12 +364,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, ans\nSet x = 22, y = 22\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
       "options": [
-        "20",
         "44",
         "35",
-        "50"
+        "50",
+        "20"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "x mod 2 = 0, y mod 2 = 0. Matching condition branch yields 44."
     },
     {
@@ -382,8 +382,8 @@
       "options": [
         "35",
         "43",
-        "50",
-        "20"
+        "20",
+        "50"
       ],
       "correctAnswer": 1,
       "explanation": "x > y is True. Executing corresponding branch updates variable and computes score = 43."
@@ -396,12 +396,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer a, b\nSet a = 13, b = 52\nif(a < b)\n    Set a = a + 10\nEnd if\nif(b < a)\n    Set b = b + 5\nEnd if\nPrint a + b",
       "options": [
-        "35",
-        "20",
         "50",
-        "75"
+        "20",
+        "75",
+        "35"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "Initially a=13, b=52. First if: 13 < 52 is True, updated a=23. Second if: 52 < 23 is False, updated b=52. Sum a + b = 75."
     },
     {
@@ -413,11 +413,11 @@
       "code": "Integer x, y, val\nSet x = 42, y = 21, val = 0\nif(x > 10)\n    if(y > 20)\n        Set val = x + y\n    else\n        Set val = x - y\n    End if\nelse\n    Set val = x * y\nEnd if\nPrint val",
       "options": [
         "20",
+        "35",
         "50",
-        "63",
-        "35"
+        "63"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 3,
       "explanation": "x (42) > 10 is True. In the inner block, y (21) > 20 is True. Result val = 63."
     },
     {
@@ -428,12 +428,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, res\nSet x = 90, y = 30\nif(x + y > 60)\n    Set res = (x + y) / 2\nelse if(x > y)\n    Set res = x - y\nelse\n    Set res = y - x\nEnd if\nPrint res",
       "options": [
-        "35",
-        "50",
         "60",
-        "20"
+        "50",
+        "20",
+        "35"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 0,
       "explanation": "Sum x + y = 120. Checking conditions in order: 120 > 60 is True, 90 > 30 is True. Corresponding branch evaluates to 60."
     },
     {
@@ -444,12 +444,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, ans\nSet x = 19, y = 38\nif(x mod 2 EQUALS 0 AND y mod 2 EQUALS 0)\n    Set ans = x + y\nelse if(x mod 2 NOT EQUALS 0 AND y mod 2 NOT EQUALS 0)\n    Set ans = x * y\nelse\n    Set ans = x - y\n    if(ans < 0)\n        Set ans = -ans\n    End if\nEnd if\nPrint ans",
       "options": [
-        "20",
-        "35",
+        "50",
         "19",
-        "50"
+        "20",
+        "35"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "x mod 2 = 1, y mod 2 = 0. Matching condition branch yields 19."
     },
     {
@@ -460,12 +460,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer x, y, score\nSet x = 55, y = 105\nif(x > y)\n    Set x = x - 5\n    Set score = x + y\nelse\n    Set y = y - 5\n    Set score = x * 2 + y\nEnd if\nPrint score",
       "options": [
-        "20",
-        "35",
         "50",
-        "215"
+        "20",
+        "215",
+        "35"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "x > y is False. Executing corresponding branch updates variable and computes score = 215."
     },
     {

@@ -12,12 +12,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(4, 5)\nPrint ans",
       "options": [
-        "12",
-        "10",
         "8",
-        "14"
+        "14",
+        "10",
+        "12"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 2,
       "explanation": "Inside solve(4, 5): a becomes 4*2 + 5 = 13. b becomes 5*2 + 13 = 23. return b - a = 10."
     },
     {
@@ -29,8 +29,8 @@
       "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 6\nSet q = compute(p)\nPrint p + q",
       "options": [
         "24",
-        "18",
         "22",
+        "18",
         "20"
       ],
       "correctAnswer": 3,
@@ -44,12 +44,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(3, 7)\nPrint out",
       "options": [
-        "8",
         "6",
         "10",
-        "4"
+        "4",
+        "8"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "helper(3, 7) computes sum of (i mod 7) for i from 1 to 3. Sum = 6."
     },
     {
@@ -60,10 +60,10 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(5))\nPrint res",
       "options": [
-        "9",
+        "13",
         "11",
-        "15",
-        "13"
+        "9",
+        "15"
       ],
       "correctAnswer": 1,
       "explanation": "Inner call g(5) = (5 * 2) - 3 = 7. Outer call g(7) = (7 * 2) - 3 = 11."
@@ -76,8 +76,8 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(8, 4)\nPrint ans",
       "options": [
-        "6",
         "10",
+        "6",
         "8",
         "12"
       ],
@@ -94,10 +94,10 @@
       "options": [
         "8",
         "6",
-        "4",
-        "2"
+        "2",
+        "4"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 3,
       "explanation": "Inside solve(7, 2): a becomes 7*2 + 2 = 16. b becomes 2*2 + 16 = 20. return b - a = 4."
     },
     {
@@ -108,12 +108,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 9\nSet q = compute(p)\nPrint p + q",
       "options": [
-        "30",
         "32",
-        "36",
-        "34"
+        "30",
+        "34",
+        "36"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "compute(9) returns 9*3 - 4 = 23. In the main scope, p remains 9 (pass by value). p + q = 9 + 23 = 32."
     },
     {
@@ -124,10 +124,10 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(2, 6)\nPrint out",
       "options": [
-        "5",
+        "7",
         "3",
-        "1",
-        "7"
+        "5",
+        "1"
       ],
       "correctAnswer": 1,
       "explanation": "helper(2, 6) computes sum of (i mod 6) for i from 1 to 2. Sum = 3."
@@ -140,12 +140,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(5))\nPrint res",
       "options": [
-        "15",
         "13",
-        "9",
-        "11"
+        "15",
+        "11",
+        "9"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "Inner call g(5) = (5 * 2) - 3 = 7. Outer call g(7) = (7 * 2) - 3 = 11."
     },
     {
@@ -156,12 +156,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(6, 4)\nPrint ans",
       "options": [
-        "8",
-        "4",
+        "2",
         "6",
-        "2"
+        "8",
+        "4"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "For u=6, v=4: u > v is True. Evaluating the active branch yields 4."
     },
     {
@@ -173,9 +173,9 @@
       "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(4, 3)\nPrint ans",
       "options": [
         "6",
+        "4",
         "8",
-        "10",
-        "4"
+        "10"
       ],
       "correctAnswer": 0,
       "explanation": "Inside solve(4, 3): a becomes 4*2 + 3 = 11. b becomes 3*2 + 11 = 17. return b - a = 6."
@@ -189,11 +189,11 @@
       "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 7\nSet q = compute(p)\nPrint p + q",
       "options": [
         "28",
-        "22",
+        "24",
         "26",
-        "24"
+        "22"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 1,
       "explanation": "compute(7) returns 7*3 - 4 = 17. In the main scope, p remains 7 (pass by value). p + q = 7 + 17 = 24."
     },
     {
@@ -206,10 +206,10 @@
       "options": [
         "4",
         "8",
-        "10",
-        "6"
+        "6",
+        "10"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "helper(3, 4) computes sum of (i mod 4) for i from 1 to 3. Sum = 6."
     },
     {
@@ -221,11 +221,11 @@
       "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(8))\nPrint res",
       "options": [
         "21",
-        "23",
+        "27",
         "25",
-        "27"
+        "23"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Inner call g(8) = (8 * 2) - 3 = 13. Outer call g(13) = (13 * 2) - 3 = 23."
     },
     {
@@ -237,9 +237,9 @@
       "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(6, 3)\nPrint ans",
       "options": [
         "6",
-        "8",
+        "10",
         "4",
-        "10"
+        "8"
       ],
       "correctAnswer": 0,
       "explanation": "For u=6, v=3: u > v is True. Evaluating the active branch yields 6."
@@ -253,11 +253,11 @@
       "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(5, 2)\nPrint ans",
       "options": [
         "6",
-        "8",
         "4",
+        "8",
         "2"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "Inside solve(5, 2): a becomes 5*2 + 2 = 12. b becomes 2*2 + 12 = 16. return b - a = 4."
     },
     {
@@ -268,12 +268,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 9\nSet q = compute(p)\nPrint p + q",
       "options": [
-        "34",
-        "30",
         "36",
-        "32"
+        "30",
+        "32",
+        "34"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "explanation": "compute(9) returns 9*3 - 4 = 23. In the main scope, p remains 9 (pass by value). p + q = 9 + 23 = 32."
     },
     {
@@ -284,12 +284,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(4, 6)\nPrint out",
       "options": [
-        "10",
-        "14",
         "8",
-        "12"
+        "14",
+        "12",
+        "10"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "helper(4, 6) computes sum of (i mod 6) for i from 1 to 4. Sum = 10."
     },
     {
@@ -300,12 +300,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(7))\nPrint res",
       "options": [
-        "21",
-        "17",
+        "19",
         "23",
-        "19"
+        "17",
+        "21"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 0,
       "explanation": "Inner call g(7) = (7 * 2) - 3 = 11. Outer call g(11) = (11 * 2) - 3 = 19."
     },
     {
@@ -316,12 +316,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(8, 3)\nPrint ans",
       "options": [
-        "8",
         "12",
         "10",
-        "14"
+        "14",
+        "8"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "For u=8, v=3: u > v is True. Evaluating the active branch yields 10."
     },
     {
@@ -332,10 +332,10 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(3, 5)\nPrint ans",
       "options": [
-        "12",
+        "14",
         "8",
         "10",
-        "14"
+        "12"
       ],
       "correctAnswer": 2,
       "explanation": "Inside solve(3, 5): a becomes 3*2 + 5 = 11. b becomes 5*2 + 11 = 21. return b - a = 10."
@@ -348,12 +348,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer compute(Integer x)\n    return x * 3 - 4\nEnd function compute\n\nInteger p, q\nSet p = 6\nSet q = compute(p)\nPrint p + q",
       "options": [
-        "22",
-        "20",
+        "18",
         "24",
-        "18"
+        "22",
+        "20"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "compute(6) returns 6*3 - 4 = 14. In the main scope, p remains 6 (pass by value). p + q = 6 + 14 = 20."
     },
     {
@@ -364,12 +364,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(5, 4)\nPrint out",
       "options": [
-        "5",
         "7",
         "9",
-        "11"
+        "11",
+        "5"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "helper(5, 4) computes sum of (i mod 4) for i from 1 to 5. Sum = 7."
     },
     {
@@ -380,12 +380,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(7))\nPrint res",
       "options": [
-        "23",
-        "17",
+        "21",
         "19",
-        "21"
+        "17",
+        "23"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "Inner call g(7) = (7 * 2) - 3 = 11. Outer call g(11) = (11 * 2) - 3 = 19."
     },
     {
@@ -396,12 +396,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(4, 4)\nPrint ans",
       "options": [
+        "2",
         "4",
         "0",
-        "2",
         "-2"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 2,
       "explanation": "For u=4, v=4: u > v is False. Evaluating the active branch yields 0."
     },
     {
@@ -412,9 +412,9 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer solve(Integer a, Integer b)\n    Set a = a * 2 + b\n    Set b = b * 2 + a\n    return b - a\nEnd function solve\n\nInteger ans\nSet ans = solve(9, 4)\nPrint ans",
       "options": [
-        "6",
-        "12",
         "10",
+        "12",
+        "6",
         "8"
       ],
       "correctAnswer": 3,
@@ -444,12 +444,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer helper(Integer n, Integer m)\n    Integer res, i\n    Set res = 0\n    for(i = 1 to n)\n        Set res = res + (i mod m)\n    End for\n    return res\nEnd function helper\n\nInteger out\nSet out = helper(3, 6)\nPrint out",
       "options": [
-        "4",
-        "8",
+        "10",
         "6",
-        "10"
+        "8",
+        "4"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 1,
       "explanation": "helper(3, 6) computes sum of (i mod 6) for i from 1 to 3. Sum = 6."
     },
     {
@@ -461,11 +461,11 @@
       "code": "Integer g(Integer k)\n    return (k * 2) - 3\nEnd function g\n\nInteger res\nSet res = g(g(6))\nPrint res",
       "options": [
         "13",
-        "15",
         "19",
+        "15",
         "17"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 2,
       "explanation": "Inner call g(6) = (6 * 2) - 3 = 9. Outer call g(9) = (9 * 2) - 3 = 15."
     },
     {
@@ -476,12 +476,12 @@
       "question": "What will be the output of the following pseudocode?",
       "code": "Integer check(Integer u, Integer v)\n    if(u > v)\n        return (u - v) * 2\n    else\n        return (v - u) * 3\n    End if\nEnd function check\n\nInteger ans\nSet ans = check(5, 6)\nPrint ans",
       "options": [
-        "3",
         "5",
         "1",
-        "7"
+        "7",
+        "3"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "For u=5, v=6: u > v is False. Evaluating the active branch yields 3."
     }
   ]
