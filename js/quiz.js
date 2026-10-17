@@ -73,20 +73,46 @@
             if (rawSeen) seenIds = JSON.parse(rawSeen);
         } catch (e) {}
 
-        // Separate unseen and seen questions
-        let unseen = pool.filter(q => !seenIds.includes(q.id));
+        // Guaranteed Stratified Sampling: Pick exactly 3 questions from each of the 10 core topics
+        const topics = [
+            "Arithmetic Operators",
+            "Relational & Logical Operators",
+            "Bitwise Operators",
+            "Conditional Statements",
+            "Loops",
+            "Functions",
+            "Recursion",
+            "Math + Bitwise Mixed",
+            "Loops + Recursion Mixed",
+            "Infosys SE Grand Challenge"
+        ];
 
-        // If fewer than 30 unseen questions remain, recycle the seen list
-        if (unseen.length < 30) {
-            seenIds = [];
-            unseen = [...pool];
+        let selected = [];
+
+        topics.forEach(tName => {
+            const topicPool = pool.filter(q => q.topic === tName);
+            if (topicPool.length === 0) return;
+
+            let unseenInTopic = topicPool.filter(q => !seenIds.includes(q.id));
+            if (unseenInTopic.length < 3) {
+                // If fewer than 3 unseen remain in this topic, recycle seen IDs for this topic
+                seenIds = seenIds.filter(id => !topicPool.some(q => q.id === id));
+                unseenInTopic = [...topicPool];
+            }
+
+            shuffleArray(unseenInTopic);
+            selected.push(...unseenInTopic.slice(0, 3));
+        });
+
+        // Safety fallback if question pool has any unexpected topic names
+        if (selected.length < 30) {
+            const remaining = pool.filter(q => !selected.some(s => s.id === q.id));
+            shuffleArray(remaining);
+            selected.push(...remaining.slice(0, 30 - selected.length));
         }
 
-        // Shuffle unseen questions
-        shuffleArray(unseen);
-
-        // Pick 30 questions
-        const selected = unseen.slice(0, 30);
+        // Shuffle the 30 questions so topics are naturally interleaved for each student
+        shuffleArray(selected);
 
         // Update seen question IDs in storage
         const newSeen = [...seenIds, ...selected.map(q => q.id)];
@@ -282,7 +308,7 @@
         // Code block
         const qidEl = document.getElementById('codeQid');
         const codeEl = document.getElementById('codeContent');
-        if (qidEl) qidEl.textContent = `Set ${q.setId} • ${q.topic} • ${q.difficulty}`;
+        if (qidEl) qidEl.textContent = `${q.topic} • ${q.difficulty}`;
         if (codeEl) codeEl.textContent = q.code;
 
         // Hide explanation panel for new question

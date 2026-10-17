@@ -11,10 +11,12 @@
 
 ---
 
-## ✨ Features
+## ✨ Key Capabilities
 
-- 🎯 **300 Authentic Pseudocode Questions**: Modeled directly after actual Infosys SE recruitment test patterns.
-- 🎲 **Smart Randomization**: Every test session randomly draws **30 questions** from the pool of 300. Unseen questions are tracked using `localStorage`, ensuring repeat attempts get fresh questions.
+- 🎯 **Authentic Infosys SE Examination**: Modeled directly after actual Infosys Software Engineer recruitment test patterns.
+- ⚖️ **Stratified Multi-Topic Blueprint**: Every 30-question test is systematically balanced — drawing questions proportionally from **all core topics** (Arithmetic, Bitwise, Logic, Conditionals, Loops, Functions, Recursion, and Hybrids) so every candidate gets a fair, full-syllabus assessment.
+- 🔒 **Anti-Collusion Blind Testing**: No "Set" numbers or question pool totals are displayed to candidates, preventing collusion between test-takers.
+- 🎲 **Smart Randomization**: Draws 30 unique questions per test. Tracks seen questions using `localStorage` so repeat attempts receive fresh questions across all topics.
 - 💡 **Instant Solution & Reasoning**: As soon as a student selects an option, the correct solution and a detailed line-by-line code trace explanation are displayed immediately, remaining visible until the candidate proceeds to the next question.
 - ⏱️ **Dual Test Modes**:
   - **Mock Test Mode**: Real exam simulation with a 90-second timer per question, a 45-minute total timer cap, one-way navigation, and automated submission.
