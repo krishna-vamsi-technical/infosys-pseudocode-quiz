@@ -6,8 +6,8 @@
 ---
 
 ## 🌐 Live Portal
-- **Live URL**: [https://krishnavamsitechnical-droid.github.io/infosys-pseudocode-quiz/](https://krishnavamsitechnical-droid.github.io/infosys-pseudocode-quiz/)
-- **Repository**: [https://github.com/krishnavamsitechnical-droid/infosys-pseudocode-quiz](https://github.com/krishnavamsitechnical-droid/infosys-pseudocode-quiz)
+- **Live URL**: [https://krishna-vamsi-technical.github.io/infosys-pseudocode-quiz/](https://krishna-vamsi-technical.github.io/infosys-pseudocode-quiz/)
+- **Repository**: [https://github.com/krishna-vamsi-technical/infosys-pseudocode-quiz](https://github.com/krishna-vamsi-technical/infosys-pseudocode-quiz)
 
 ---
 
@@ -100,20 +100,20 @@ git commit -m "Initial commit: Infosys SE Pseudocode Quiz Portal with 300 questi
 ```
 
 ### 2. Push to GitHub
-Create a new public repository named `infosys-pseudocode-quiz` under your GitHub account (`krishnavamsitechnical-droid`), then run:
+Create a new public repository named `infosys-pseudocode-quiz` under your GitHub account (`krishna-vamsi-technical`), then run:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/krishnavamsitechnical-droid/infosys-pseudocode-quiz.git
+git remote add origin https://github.com/krishna-vamsi-technical/infosys-pseudocode-quiz.git
 git push -u origin main
 ```
 
 ### 3. Enable GitHub Pages
-1. Go to your repository on GitHub: `https://github.com/krishnavamsitechnical-droid/infosys-pseudocode-quiz`
+1. Go to your repository on GitHub: `https://github.com/krishna-vamsi-technical/infosys-pseudocode-quiz`
 2. Navigate to **Settings** > **Pages**.
 3. Under **Build and deployment** > **Source**, select **GitHub Actions** (recommended) or select **Deploy from a branch** (`main` / root).
 4. Your portal will be live in 1–2 minutes at:
-   `https://krishnavamsitechnical-droid.github.io/infosys-pseudocode-quiz/`
+   `https://krishna-vamsi-technical.github.io/infosys-pseudocode-quiz/`
 
 ---
 
