@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results — Infosys SE Quiz Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+    </button>
+    <div class="particles" id="particles"></div>
+
+    <main class="results-container">
+        <!-- Score Card -->
+        <section class="score-card" id="scoreCard">
+            <div class="score-header">
+                <h1 class="score-title">Test Complete!</h1>
+                <p class="score-student" id="scoreStudent"></p>
+                <p class="score-meta" id="scoreMeta"></p>
+            </div>
+            <div class="score-circle-wrap">
+                <div class="score-circle" id="scoreCircle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="score-bg" cx="60" cy="60" r="52"/>
+                        <circle class="score-fill" id="scoreFill" cx="60" cy="60" r="52"/>
+                    </svg>
+                    <div class="score-value">
+                        <span class="score-num" id="scoreNum">0</span>
+                        <span class="score-total">/ 30</span>
+                    </div>
+                </div>
+                <div class="score-percent" id="scorePercent">0%</div>
+            </div>
+            <div class="score-breakdown">
+                <div class="breakdown-item correct">
+                    <span class="breakdown-icon">✅</span>
+                    <span class="breakdown-num" id="correctCount">0</span>
+                    <span class="breakdown-label">Correct</span>
+                </div>
+                <div class="breakdown-item wrong">
+                    <span class="breakdown-icon">❌</span>
+                    <span class="breakdown-num" id="wrongCount">0</span>
+                    <span class="breakdown-label">Wrong</span>
+                </div>
+                <div class="breakdown-item skipped">
+                    <span class="breakdown-icon">⏭️</span>
+                    <span class="breakdown-num" id="skippedCount">0</span>
+                    <span class="breakdown-label">Skipped</span>
+                </div>
+                <div class="breakdown-item time">
+                    <span class="breakdown-icon">⏱️</span>
+                    <span class="breakdown-num" id="timeTaken">0:00</span>
+                    <span class="breakdown-label">Time Taken</span>
+                </div>
+            </div>
+            <div class="score-message" id="scoreMessage"></div>
+            <div class="tab-violations" id="tabViolations" style="display:none;">
+                <span class="violation-icon">⚠️</span>
+                <span class="violation-text" id="violationText"></span>
+            </div>
+        </section>
+
+        <!-- Topic-wise Breakdown -->
+        <section class="topic-breakdown" id="topicBreakdown">
+            <h2 class="section-title">Topic-wise Performance</h2>
+            <div class="topic-bars" id="topicBars"></div>
+        </section>
+
+        <!-- Answer Review -->
+        <section class="review-section">
+            <div class="review-header">
+                <h2 class="section-title">Detailed Answer Review</h2>
+                <div class="review-filters">
+                    <button class="filter-btn active" data-filter="all">All (30)</button>
+                    <button class="filter-btn" data-filter="correct">✅ Correct</button>
+                    <button class="filter-btn" data-filter="wrong">❌ Wrong</button>
+                    <button class="filter-btn" data-filter="skipped">⏭️ Skipped</button>
+                </div>
+            </div>
+            <div class="review-list" id="reviewList"></div>
+        </section>
+
+        <!-- Actions -->
+        <section class="results-actions">
+            <button class="btn-retry" id="retryBtn">
+                <span>🔄</span> Take Another Test
+            </button>
+            <a href="index.html" class="btn-home">
+                <span>🏠</span> Back to Home
+            </a>
+        </section>
+    </main>
+
+    <script src="js/results.js"></script>
+</body>
+</html>

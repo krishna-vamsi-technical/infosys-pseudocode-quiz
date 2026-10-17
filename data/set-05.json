@@ -1,0 +1,488 @@
+{
+  "setId": 5,
+  "setName": "Set 5 \u2014 Loops",
+  "totalQuestions": 30,
+  "timePerQuestion": 90,
+  "questions": [
+    {
+      "id": 121,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 2\nEnd while\nPrint tot",
+      "options": [
+        "18",
+        "32",
+        "24",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Loop runs for i values where i <= 5 with step 2. Summing i * 2 at each iteration results in tot = 18."
+    },
+    {
+      "id": 122,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 3\nEnd while\nPrint val",
+      "options": [
+        "33",
+        "24",
+        "32",
+        "18"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 3. The loop breaks when val > 25. Final val = 33."
+    },
+    {
+      "id": 123,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 2)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
+      "options": [
+        "24",
+        "18",
+        "32",
+        "12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 2. Adding (i + j) in each inner iteration sums to count = 32."
+    },
+    {
+      "id": 124,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 2\nEnd while\nPrint prod",
+      "options": [
+        "24",
+        "18",
+        "32",
+        "5"
+      ],
+      "correctAnswer": 3,
+      "explanation": "x starts at 1 and increases by 2 up to 7. Multiplying and taking mod 100 at each step yields prod = 5."
+    },
+    {
+      "id": 125,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
+      "options": [
+        "24",
+        "18",
+        "35",
+        "32"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
+    },
+    {
+      "id": 126,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 4\nEnd while\nPrint tot",
+      "options": [
+        "12",
+        "18",
+        "32",
+        "24"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Loop runs for i values where i <= 5 with step 4. Summing i * 2 at each iteration results in tot = 12."
+    },
+    {
+      "id": 127,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 2\nEnd while\nPrint val",
+      "options": [
+        "18",
+        "32",
+        "24",
+        "34"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 2. The loop breaks when val > 25. Final val = 34."
+    },
+    {
+      "id": 128,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
+      "options": [
+        "24",
+        "18",
+        "32",
+        "80"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
+    },
+    {
+      "id": 129,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 1\nEnd while\nPrint prod",
+      "options": [
+        "18",
+        "32",
+        "24",
+        "40"
+      ],
+      "correctAnswer": 3,
+      "explanation": "x starts at 1 and increases by 1 up to 7. Multiplying and taking mod 100 at each step yields prod = 40."
+    },
+    {
+      "id": 130,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
+      "options": [
+        "32",
+        "35",
+        "24",
+        "18"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
+    },
+    {
+      "id": 131,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 1\nEnd while\nPrint tot",
+      "options": [
+        "24",
+        "32",
+        "30",
+        "18"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Loop runs for i values where i <= 5 with step 1. Summing i * 2 at each iteration results in tot = 30."
+    },
+    {
+      "id": 132,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 4\nEnd while\nPrint val",
+      "options": [
+        "24",
+        "32",
+        "12",
+        "18"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 4. The loop breaks when val > 25. Final val = 32."
+    },
+    {
+      "id": 133,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 3)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
+      "options": [
+        "24",
+        "18",
+        "54",
+        "32"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 3. Adding (i + j) in each inner iteration sums to count = 54."
+    },
+    {
+      "id": 134,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 3\nEnd while\nPrint prod",
+      "options": [
+        "24",
+        "28",
+        "18",
+        "32"
+      ],
+      "correctAnswer": 1,
+      "explanation": "x starts at 1 and increases by 3 up to 7. Multiplying and taking mod 100 at each step yields prod = 28."
+    },
+    {
+      "id": 135,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
+      "options": [
+        "18",
+        "32",
+        "35",
+        "24"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
+    },
+    {
+      "id": 136,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 5)\n    Set tot = tot + (i * 2)\n    Set i = i + 3\nEnd while\nPrint tot",
+      "options": [
+        "32",
+        "10",
+        "18",
+        "24"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Loop runs for i values where i <= 5 with step 3. Summing i * 2 at each iteration results in tot = 10."
+    },
+    {
+      "id": 137,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 18\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 1\nEnd while\nPrint val",
+      "options": [
+        "35",
+        "32",
+        "24",
+        "18"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Starting with x = 18, each iteration adds x to val and decrements x by 1. The loop breaks when val > 25. Final val = 35."
+    },
+    {
+      "id": 138,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
+      "options": [
+        "24",
+        "18",
+        "80",
+        "32"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
+    },
+    {
+      "id": 139,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 7)\n    Set prod = (prod * x) mod 100\n    Set x = x + 4\nEnd while\nPrint prod",
+      "options": [
+        "32",
+        "18",
+        "5",
+        "24"
+      ],
+      "correctAnswer": 2,
+      "explanation": "x starts at 1 and increases by 4 up to 7. Multiplying and taking mod 100 at each step yields prod = 5."
+    },
+    {
+      "id": 140,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 10)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
+      "options": [
+        "18",
+        "32",
+        "24",
+        "35"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Iterating from 1 to 10: even values add i, odd values add 1. Final sum s = 35."
+    },
+    {
+      "id": 141,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 3)\n    Set tot = tot + (i * 2)\n    Set i = i + 2\nEnd while\nPrint tot",
+      "options": [
+        "32",
+        "18",
+        "24",
+        "8"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Loop runs for i values where i <= 3 with step 2. Summing i * 2 at each iteration results in tot = 8."
+    },
+    {
+      "id": 142,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 15\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 5\nEnd while\nPrint val",
+      "options": [
+        "24",
+        "30",
+        "18",
+        "32"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Starting with x = 15, each iteration adds x to val and decrements x by 5. The loop breaks when val > 25. Final val = 30."
+    },
+    {
+      "id": 143,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
+      "options": [
+        "24",
+        "18",
+        "32",
+        "80"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
+    },
+    {
+      "id": 144,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 4)\n    Set prod = (prod * x) mod 100\n    Set x = x + 5\nEnd while\nPrint prod",
+      "options": [
+        "32",
+        "18",
+        "1",
+        "24"
+      ],
+      "correctAnswer": 2,
+      "explanation": "x starts at 1 and increases by 5 up to 4. Multiplying and taking mod 100 at each step yields prod = 1."
+    },
+    {
+      "id": 145,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 9)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
+      "options": [
+        "32",
+        "25",
+        "18",
+        "24"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Iterating from 1 to 9: even values add i, odd values add 1. Final sum s = 25."
+    },
+    {
+      "id": 146,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tot, i\nSet tot = 0, i = 1\nwhile(i <= 3)\n    Set tot = tot + (i * 2)\n    Set i = i + 3\nEnd while\nPrint tot",
+      "options": [
+        "24",
+        "32",
+        "2",
+        "18"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Loop runs for i values where i <= 3 with step 3. Summing i * 2 at each iteration results in tot = 2."
+    },
+    {
+      "id": 147,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 15\nwhile(x > 0)\n    Set val = val + x\n    if(val > 25)\n        Jump out of loop\n    End if\n    Set x = x - 6\nEnd while\nPrint val",
+      "options": [
+        "32",
+        "18",
+        "27",
+        "24"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Starting with x = 15, each iteration adds x to val and decrements x by 6. The loop breaks when val > 25. Final val = 27."
+    },
+    {
+      "id": 148,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer count, i, j\nSet count = 0\nfor(i = 1 to 4)\n    for(j = 1 to 4)\n        Set count = count + (i + j)\n    End for\nEnd for\nPrint count",
+      "options": [
+        "24",
+        "18",
+        "80",
+        "32"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Outer loop runs from 1 to 4, inner loop runs from 1 to 4. Adding (i + j) in each inner iteration sums to count = 80."
+    },
+    {
+      "id": 149,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer prod, x\nSet prod = 1, x = 1\nwhile(x <= 4)\n    Set prod = (prod * x) mod 100\n    Set x = x + 6\nEnd while\nPrint prod",
+      "options": [
+        "18",
+        "24",
+        "32",
+        "1"
+      ],
+      "correctAnswer": 3,
+      "explanation": "x starts at 1 and increases by 6 up to 4. Multiplying and taking mod 100 at each step yields prod = 1."
+    },
+    {
+      "id": 150,
+      "setId": 5,
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer s, i\nSet s = 0\nfor(i = 1 to 5)\n    if(i mod 2 EQUALS 0)\n        Set s = s + i\n    else\n        Set s = s + 1\n    End if\nEnd for\nPrint s",
+      "options": [
+        "32",
+        "24",
+        "9",
+        "18"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Iterating from 1 to 5: even values add i, odd values add 1. Final sum s = 9."
+    }
+  ]
+}

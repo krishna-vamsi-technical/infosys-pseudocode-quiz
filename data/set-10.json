@@ -1,0 +1,488 @@
+{
+  "setId": 10,
+  "setName": "Set 10 \u2014 Infosys SE Grand Challenge",
+  "totalQuestions": 30,
+  "timePerQuestion": 90,
+  "questions": [
+    {
+      "id": 271,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 18, b = 12, c = 6\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
+      "options": [
+        "10",
+        "12",
+        "8",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a & b) = 0. (b ^ c) = 10. (a mod c) = 0. Result = 0 + 10 - 0 = 10."
+    },
+    {
+      "id": 272,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 25, b = 15, c = 5\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
+      "options": [
+        "50",
+        "48",
+        "55",
+        "52"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Testing conditions: (25 > 15 AND 15 > 5) is True. Branch taken computes 50."
+    },
+    {
+      "id": 273,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 16\nwhile(x > 0)\n    Set val = val + (x ^ 8)\n    Set x = x - 5\nEnd while\nPrint val",
+      "options": [
+        "50",
+        "52",
+        "55",
+        "48"
+      ],
+      "correctAnswer": 0,
+      "explanation": "x starts at 16 and steps down by 5. Accumulating (x ^ 8) at each step yields 50."
+    },
+    {
+      "id": 274,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(8, 4)\nPrint ans",
+      "options": [
+        "30",
+        "34",
+        "32",
+        "37"
+      ],
+      "correctAnswer": 2,
+      "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(8, 4) = 32."
+    },
+    {
+      "id": 275,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, r\nSet a = 16, b = 28, c = 7\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
+      "options": [
+        "41",
+        "46",
+        "39",
+        "43"
+      ],
+      "correctAnswer": 0,
+      "explanation": "a << 1 = 32. b >> 1 = 14. Sum = 46. XOR with c (7) gives 41."
+    },
+    {
+      "id": 276,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 21, b = 14, c = 7\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "18"
+      ],
+      "correctAnswer": 1,
+      "explanation": "(a & b) = 4. (b ^ c) = 9. (a mod c) = 0. Result = 4 + 9 - 0 = 13."
+    },
+    {
+      "id": 277,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 35, b = 25, c = 5\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
+      "options": [
+        "50",
+        "55",
+        "52",
+        "48"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Testing conditions: (35 > 25 AND 25 > 5) is True. Branch taken computes 50."
+    },
+    {
+      "id": 278,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 24\nwhile(x > 0)\n    Set val = val + (x ^ 8)\n    Set x = x - 4\nEnd while\nPrint val",
+      "options": [
+        "82",
+        "86",
+        "89",
+        "84"
+      ],
+      "correctAnswer": 3,
+      "explanation": "x starts at 24 and steps down by 4. Accumulating (x ^ 8) at each step yields 84."
+    },
+    {
+      "id": 279,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(6, 3)\nPrint ans",
+      "options": [
+        "23",
+        "18",
+        "16",
+        "20"
+      ],
+      "correctAnswer": 1,
+      "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(6, 3) = 18."
+    },
+    {
+      "id": 280,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, r\nSet a = 27, b = 18, c = 9\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
+      "options": [
+        "59",
+        "52",
+        "54",
+        "56"
+      ],
+      "correctAnswer": 2,
+      "explanation": "a << 1 = 54. b >> 1 = 9. Sum = 63. XOR with c (9) gives 54."
+    },
+    {
+      "id": 281,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 24, b = 36, c = 12\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
+      "options": [
+        "40",
+        "38",
+        "45",
+        "42"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a & b) = 0. (b ^ c) = 40. (a mod c) = 0. Result = 0 + 40 - 0 = 40."
+    },
+    {
+      "id": 282,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 50, b = 30, c = 10\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
+      "options": [
+        "205",
+        "198",
+        "202",
+        "200"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Testing conditions: (50 > 30 AND 30 > 10) is True. Branch taken computes 200."
+    },
+    {
+      "id": 283,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 22\nwhile(x > 0)\n    Set val = val + (x ^ 5)\n    Set x = x - 3\nEnd while\nPrint val",
+      "options": [
+        "92",
+        "97",
+        "94",
+        "90"
+      ],
+      "correctAnswer": 0,
+      "explanation": "x starts at 22 and steps down by 3. Accumulating (x ^ 5) at each step yields 92."
+    },
+    {
+      "id": 284,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(5, 4)\nPrint ans",
+      "options": [
+        "25",
+        "18",
+        "22",
+        "20"
+      ],
+      "correctAnswer": 3,
+      "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(5, 4) = 20."
+    },
+    {
+      "id": 285,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, r\nSet a = 36, b = 24, c = 6\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
+      "options": [
+        "84",
+        "80",
+        "82",
+        "87"
+      ],
+      "correctAnswer": 2,
+      "explanation": "a << 1 = 72. b >> 1 = 12. Sum = 84. XOR with c (6) gives 82."
+    },
+    {
+      "id": 286,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 42, b = 28, c = 14\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
+      "options": [
+        "31",
+        "24",
+        "26",
+        "28"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(a & b) = 8. (b ^ c) = 18. (a mod c) = 0. Result = 8 + 18 - 0 = 26."
+    },
+    {
+      "id": 287,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 54, b = 18, c = 9\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
+      "options": [
+        "324",
+        "329",
+        "322",
+        "326"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Testing conditions: (54 > 18 AND 18 > 9) is True. Branch taken computes 324."
+    },
+    {
+      "id": 288,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 30\nwhile(x > 0)\n    Set val = val + (x ^ 20)\n    Set x = x - 10\nEnd while\nPrint val",
+      "options": [
+        "45",
+        "40",
+        "38",
+        "42"
+      ],
+      "correctAnswer": 1,
+      "explanation": "x starts at 30 and steps down by 10. Accumulating (x ^ 20) at each step yields 40."
+    },
+    {
+      "id": 289,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(6, 4)\nPrint ans",
+      "options": [
+        "24",
+        "29",
+        "26",
+        "22"
+      ],
+      "correctAnswer": 0,
+      "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(6, 4) = 24."
+    },
+    {
+      "id": 290,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, r\nSet a = 44, b = 22, c = 11\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
+      "options": [
+        "104",
+        "106",
+        "109",
+        "102"
+      ],
+      "correctAnswer": 0,
+      "explanation": "a << 1 = 88. b >> 1 = 11. Sum = 99. XOR with c (11) gives 104."
+    },
+    {
+      "id": 291,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 15, b = 45, c = 30\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
+      "options": [
+        "51",
+        "47",
+        "49",
+        "54"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(a & b) = 13. (b ^ c) = 51. (a mod c) = 15. Result = 13 + 51 - 15 = 49."
+    },
+    {
+      "id": 292,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 26, b = 39, c = 13\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
+      "options": [
+        "57",
+        "52",
+        "50",
+        "54"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Testing conditions: (26 > 39 AND 39 > 13) is False. Branch taken computes 52."
+    },
+    {
+      "id": 293,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 19\nwhile(x > 0)\n    Set val = val + (x ^ 19)\n    Set x = x - 4\nEnd while\nPrint val",
+      "options": [
+        "90",
+        "88",
+        "93",
+        "86"
+      ],
+      "correctAnswer": 1,
+      "explanation": "x starts at 19 and steps down by 4. Accumulating (x ^ 19) at each step yields 88."
+    },
+    {
+      "id": 294,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(10, 5)\nPrint ans",
+      "options": [
+        "52",
+        "55",
+        "48",
+        "50"
+      ],
+      "correctAnswer": 3,
+      "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(10, 5) = 50."
+    },
+    {
+      "id": 295,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, r\nSet a = 64, b = 32, c = 16\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
+      "options": [
+        "133",
+        "130",
+        "126",
+        "128"
+      ],
+      "correctAnswer": 3,
+      "explanation": "a << 1 = 128. b >> 1 = 16. Sum = 144. XOR with c (16) gives 128."
+    },
+    {
+      "id": 296,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 70, b = 35, c = 7\nSet out = (a & b) + (b ^ c) - (a mod c)\nPrint out",
+      "options": [
+        "38",
+        "36",
+        "43",
+        "40"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a & b) = 2. (b ^ c) = 36. (a mod c) = 0. Result = 2 + 36 - 0 = 38."
+    },
+    {
+      "id": 297,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 80, b = 40, c = 10\nif(a > b AND b > c)\n    Set res = (a - b) * c\nelse if(a < b OR c > 10)\n    Set res = (b - c) * 2\nelse\n    Set res = a + b + c\nEnd if\nPrint res",
+      "options": [
+        "402",
+        "398",
+        "400",
+        "405"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Testing conditions: (80 > 40 AND 40 > 10) is True. Branch taken computes 400."
+    },
+    {
+      "id": 298,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer val, x\nSet val = 0, x = 37\nwhile(x > 0)\n    Set val = val + (x ^ 5)\n    Set x = x - 6\nEnd while\nPrint val",
+      "options": [
+        "120",
+        "122",
+        "127",
+        "124"
+      ],
+      "correctAnswer": 1,
+      "explanation": "x starts at 37 and steps down by 6. Accumulating (x ^ 5) at each step yields 122."
+    },
+    {
+      "id": 299,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer solve(Integer p, Integer q)\n    if(q <= 1)\n        return p\n    End if\n    return p + solve(p, q - 1)\nEnd function solve\n\nInteger ans\nSet ans = solve(18, 5)\nPrint ans",
+      "options": [
+        "92",
+        "95",
+        "88",
+        "90"
+      ],
+      "correctAnswer": 3,
+      "explanation": "solve(p, q) is a recursive multiplication of p by q. solve(18, 5) = 90."
+    },
+    {
+      "id": 300,
+      "setId": 10,
+      "topic": "Infosys SE Grand Challenge",
+      "difficulty": "Hard",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, r\nSet a = 100, b = 50, c = 25\nSet r = ((a << 1) + (b >> 1)) ^ c\nPrint r",
+      "options": [
+        "250",
+        "248",
+        "253",
+        "246"
+      ],
+      "correctAnswer": 1,
+      "explanation": "a << 1 = 200. b >> 1 = 25. Sum = 225. XOR with c (25) gives 248."
+    }
+  ]
+}

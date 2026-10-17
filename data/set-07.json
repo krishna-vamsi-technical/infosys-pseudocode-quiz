@@ -1,0 +1,488 @@
+{
+  "setId": 7,
+  "setName": "Set 7 \u2014 Recursion",
+  "totalQuestions": 30,
+  "timePerQuestion": 90,
+  "questions": [
+    {
+      "id": 181,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(4)\nPrint res",
+      "options": [
+        "13",
+        "11",
+        "9",
+        "10"
+      ],
+      "correctAnswer": 3,
+      "explanation": "rec_sum(4) recursively adds 4 + rec_sum(3) until base case x <= 1 returns 1. Total = 10."
+    },
+    {
+      "id": 182,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(5)\nPrint ans",
+      "options": [
+        "48",
+        "47",
+        "46",
+        "50"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=5, fun(5) = 47."
+    },
+    {
+      "id": 183,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(3)\nPrint ans",
+      "options": [
+        "3",
+        "7",
+        "4",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=3, answer is 4."
+    },
+    {
+      "id": 184,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(12)\nPrint val",
+      "options": [
+        "22",
+        "23",
+        "21",
+        "25"
+      ],
+      "correctAnswer": 0,
+      "explanation": "halve(12) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 22."
+    },
+    {
+      "id": 185,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(4)\nPrint result",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=4, result is 2."
+    },
+    {
+      "id": 186,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(5)\nPrint res",
+      "options": [
+        "18",
+        "15",
+        "16",
+        "14"
+      ],
+      "correctAnswer": 1,
+      "explanation": "rec_sum(5) recursively adds 5 + rec_sum(4) until base case x <= 1 returns 1. Total = 15."
+    },
+    {
+      "id": 187,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(3)\nPrint ans",
+      "options": [
+        "11",
+        "10",
+        "12",
+        "14"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=3, fun(3) = 11."
+    },
+    {
+      "id": 188,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(4)\nPrint ans",
+      "options": [
+        "6",
+        "8",
+        "7",
+        "10"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=4, answer is 7."
+    },
+    {
+      "id": 189,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(10)\nPrint val",
+      "options": [
+        "17",
+        "19",
+        "18",
+        "21"
+      ],
+      "correctAnswer": 2,
+      "explanation": "halve(10) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 18."
+    },
+    {
+      "id": 190,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(6)\nPrint result",
+      "options": [
+        "4",
+        "3",
+        "6",
+        "2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=6, result is 3."
+    },
+    {
+      "id": 191,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(3)\nPrint res",
+      "options": [
+        "5",
+        "9",
+        "7",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "rec_sum(3) recursively adds 3 + rec_sum(2) until base case x <= 1 returns 1. Total = 6."
+    },
+    {
+      "id": 192,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(4)\nPrint ans",
+      "options": [
+        "22",
+        "24",
+        "23",
+        "26"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=4, fun(4) = 23."
+    },
+    {
+      "id": 193,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(5)\nPrint ans",
+      "options": [
+        "15",
+        "12",
+        "11",
+        "13"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=5, answer is 12."
+    },
+    {
+      "id": 194,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(6)\nPrint val",
+      "options": [
+        "9",
+        "13",
+        "10",
+        "11"
+      ],
+      "correctAnswer": 2,
+      "explanation": "halve(6) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 10."
+    },
+    {
+      "id": 195,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(4)\nPrint result",
+      "options": [
+        "2",
+        "1",
+        "5",
+        "3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=4, result is 2."
+    },
+    {
+      "id": 196,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(5)\nPrint res",
+      "options": [
+        "15",
+        "16",
+        "14",
+        "18"
+      ],
+      "correctAnswer": 0,
+      "explanation": "rec_sum(5) recursively adds 5 + rec_sum(4) until base case x <= 1 returns 1. Total = 15."
+    },
+    {
+      "id": 197,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(6)\nPrint ans",
+      "options": [
+        "94",
+        "96",
+        "95",
+        "98"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=6, fun(6) = 95."
+    },
+    {
+      "id": 198,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(3)\nPrint ans",
+      "options": [
+        "5",
+        "4",
+        "7",
+        "3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=3, answer is 4."
+    },
+    {
+      "id": 199,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(8)\nPrint val",
+      "options": [
+        "18",
+        "15",
+        "14",
+        "16"
+      ],
+      "correctAnswer": 1,
+      "explanation": "halve(8) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 15."
+    },
+    {
+      "id": 200,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(5)\nPrint result",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=5, result is 3."
+    },
+    {
+      "id": 201,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(4)\nPrint res",
+      "options": [
+        "13",
+        "11",
+        "10",
+        "9"
+      ],
+      "correctAnswer": 2,
+      "explanation": "rec_sum(4) recursively adds 4 + rec_sum(3) until base case x <= 1 returns 1. Total = 10."
+    },
+    {
+      "id": 202,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(5)\nPrint ans",
+      "options": [
+        "46",
+        "47",
+        "50",
+        "48"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=5, fun(5) = 47."
+    },
+    {
+      "id": 203,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(3)\nPrint ans",
+      "options": [
+        "7",
+        "4",
+        "3",
+        "5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=3, answer is 4."
+    },
+    {
+      "id": 204,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(12)\nPrint val",
+      "options": [
+        "22",
+        "25",
+        "21",
+        "23"
+      ],
+      "correctAnswer": 0,
+      "explanation": "halve(12) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 22."
+    },
+    {
+      "id": 205,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(4)\nPrint result",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=4, result is 2."
+    },
+    {
+      "id": 206,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer rec_sum(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + rec_sum(x - 1)\nEnd function rec_sum\n\nInteger res\nSet res = rec_sum(5)\nPrint res",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "18"
+      ],
+      "correctAnswer": 1,
+      "explanation": "rec_sum(5) recursively adds 5 + rec_sum(4) until base case x <= 1 returns 1. Total = 15."
+    },
+    {
+      "id": 207,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer fun(Integer x)\n    if(x <= 0)\n        return 0\n    End if\n    if(x EQUALS 1)\n        return 2\n    End if\n    return 2 * fun(x - 1) + 1\nEnd function fun\n\nInteger ans\nSet ans = fun(3)\nPrint ans",
+      "options": [
+        "10",
+        "12",
+        "11",
+        "14"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Traced step-by-step: fun(1)=2, fun(2)=2*2+1=5, fun(3)=2*5+1=11... For n=3, fun(3) = 11."
+    },
+    {
+      "id": 208,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer tree(Integer x)\n    if(x <= 1)\n        return x\n    End if\n    return tree(x - 1) + tree(x - 2) + 1\nEnd function tree\n\nInteger ans\nSet ans = tree(4)\nPrint ans",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Base cases: tree(0)=0, tree(1)=1. For x >= 2: tree(x) = tree(x-1) + tree(x-2) + 1. For x=4, answer is 7."
+    },
+    {
+      "id": 209,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer halve(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x + halve(x / 2)\nEnd function halve\n\nInteger val\nSet val = halve(10)\nPrint val",
+      "options": [
+        "18",
+        "21",
+        "17",
+        "19"
+      ],
+      "correctAnswer": 0,
+      "explanation": "halve(10) adds current x and recurses with integer division x / 2 until x <= 1. Sum = 18."
+    },
+    {
+      "id": 210,
+      "setId": 7,
+      "topic": "Recursion",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer alt(Integer x)\n    if(x <= 1)\n        return 1\n    End if\n    return x - alt(x - 1)\nEnd function alt\n\nInteger result\nSet result = alt(6)\nPrint result",
+      "options": [
+        "6",
+        "3",
+        "4",
+        "2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Traced: alt(1)=1, alt(2)=2-1=1, alt(3)=3-1=2, alt(4)=4-2=2, alt(5)=5-2=3... For n=6, result is 3."
+    }
+  ]
+}

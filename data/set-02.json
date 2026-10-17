@@ -1,0 +1,488 @@
+{
+  "setId": 2,
+  "setName": "Set 2 \u2014 Relational & Logical Operators",
+  "totalQuestions": 30,
+  "timePerQuestion": 90,
+  "questions": [
+    {
+      "id": 31,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 10, b = 20, c = 15\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
+      "options": [
+        "17",
+        "23",
+        "20",
+        "21"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Evaluate (a < b): (10 < 20) is True. Evaluate (b > c): (20 > 15) is True. Both AND evaluates to True. Branch taken yields 20."
+    },
+    {
+      "id": 32,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 5, b = 5, c = 10\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
+      "options": [
+        "10",
+        "7",
+        "13",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a EQUALS b) is True. (c > a + b) is (10 > 10) = False. The OR condition is True. Result is 10."
+    },
+    {
+      "id": 33,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, val\nSet a = 12, b = 8, c = 4\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
+      "options": [
+        "5",
+        "8",
+        "9",
+        "11"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NOT(a > b) is False. c mod 2 EQUALS 0 is True. AND condition is False. Value is 8."
+    },
+    {
+      "id": 34,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 7, b = 14, c = 21\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
+      "options": [
+        "39",
+        "43",
+        "42",
+        "45"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(7 + 14 >= 21) is True. (14 - 7 < 21) is True. Condition is True. out = 42."
+    },
+    {
+      "id": 35,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 15, b = 30, c = 25\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
+      "options": [
+        "58",
+        "52",
+        "55",
+        "56"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(30 > 30) is False. (60 < 25) is False. Condition evaluates to False. Result = 55."
+    },
+    {
+      "id": 36,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, x\nSet a = 18, b = 9, c = 3\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
+      "options": [
+        "13",
+        "10",
+        "7",
+        "11"
+      ],
+      "correctAnswer": 1,
+      "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is False. Combined is False. Result = 10."
+    },
+    {
+      "id": 37,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 24, b = 12, c = 6\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
+      "options": [
+        "10",
+        "4",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Evaluate (a < b): (24 < 12) is False. Evaluate (b > c): (12 > 6) is True. Both AND evaluates to False. Branch taken yields 7."
+    },
+    {
+      "id": 38,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 9, b = 9, c = 9\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
+      "options": [
+        "19",
+        "15",
+        "21",
+        "18"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(a EQUALS b) is True. (c > a + b) is (9 > 18) = False. The OR condition is True. Result is 18."
+    },
+    {
+      "id": 39,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, val\nSet a = 14, b = 28, c = 7\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
+      "options": [
+        "21",
+        "24",
+        "18",
+        "22"
+      ],
+      "correctAnswer": 0,
+      "explanation": "NOT(a > b) is True. c mod 2 EQUALS 0 is False. AND condition is False. Value is 21."
+    },
+    {
+      "id": 40,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 16, b = 4, c = 8\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
+      "options": [
+        "29",
+        "31",
+        "28",
+        "25"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(16 + 4 >= 8) is True. (4 - 16 < 8) is True. Condition is True. out = 28."
+    },
+    {
+      "id": 41,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 30, b = 15, c = 45\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
+      "options": [
+        "45",
+        "42",
+        "48",
+        "46"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(60 > 15) is True. (30 < 45) is True. Condition evaluates to True. Result = 45."
+    },
+    {
+      "id": 42,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, x\nSet a = 11, b = 22, c = 33\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
+      "options": [
+        "39",
+        "43",
+        "42",
+        "45"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is True. Combined is True. Result = 42."
+    },
+    {
+      "id": 43,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 8, b = 16, c = 24\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
+      "options": [
+        "12",
+        "14",
+        "8",
+        "11"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Evaluate (a < b): (8 < 16) is True. Evaluate (b > c): (16 > 24) is False. Both AND evaluates to False. Branch taken yields 11."
+    },
+    {
+      "id": 44,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 25, b = 5, c = 10\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
+      "options": [
+        "-18",
+        "-12",
+        "-15",
+        "-14"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(a EQUALS b) is False. (c > a + b) is (10 > 30) = False. The OR condition is False. Result is -15."
+    },
+    {
+      "id": 45,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, val\nSet a = 13, b = 26, c = 39\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
+      "options": [
+        "55",
+        "52",
+        "49",
+        "53"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NOT(a > b) is True. c mod 2 EQUALS 0 is False. AND condition is False. Value is 52."
+    },
+    {
+      "id": 46,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 40, b = 20, c = 10\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
+      "options": [
+        "71",
+        "73",
+        "70",
+        "67"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(40 + 20 >= 10) is True. (20 - 40 < 10) is True. Condition is True. out = 70."
+    },
+    {
+      "id": 47,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 6, b = 18, c = 12\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
+      "options": [
+        "33",
+        "31",
+        "27",
+        "30"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(12 > 18) is False. (36 < 12) is False. Condition evaluates to False. Result = 30."
+    },
+    {
+      "id": 48,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, x\nSet a = 21, b = 7, c = 14\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
+      "options": [
+        "27",
+        "30",
+        "24",
+        "28"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is True. Combined is True. Result = 27."
+    },
+    {
+      "id": 49,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 35, b = 7, c = 28\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
+      "options": [
+        "3",
+        "-1",
+        "2",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Evaluate (a < b): (35 < 7) is False. Evaluate (b > c): (7 > 28) is False. Both AND evaluates to False. Branch taken yields 2."
+    },
+    {
+      "id": 50,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 17, b = 34, c = 51\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
+      "options": [
+        "35",
+        "34",
+        "37",
+        "31"
+      ],
+      "correctAnswer": 1,
+      "explanation": "(a EQUALS b) is False. (c > a + b) is (51 > 51) = False. The OR condition is False. Result is 34."
+    },
+    {
+      "id": 51,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, val\nSet a = 50, b = 25, c = 75\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
+      "options": [
+        "88",
+        "84",
+        "87",
+        "90"
+      ],
+      "correctAnswer": 2,
+      "explanation": "NOT(a > b) is False. c mod 2 EQUALS 0 is False. AND condition is False. Value is 87."
+    },
+    {
+      "id": 52,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 4, b = 8, c = 16\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
+      "options": [
+        "19",
+        "13",
+        "17",
+        "16"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(4 + 8 >= 16) is False. (8 - 4 < 16) is True. Condition is False. out = 16."
+    },
+    {
+      "id": 53,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 27, b = 9, c = 18\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
+      "options": [
+        "39",
+        "37",
+        "33",
+        "36"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(54 > 9) is True. (18 < 18) is False. Condition evaluates to True. Result = 36."
+    },
+    {
+      "id": 54,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, x\nSet a = 32, b = 16, c = 8\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
+      "options": [
+        "24",
+        "25",
+        "21",
+        "27"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is False. Combined is False. Result = 24."
+    },
+    {
+      "id": 55,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 48, b = 24, c = 12\nif((a < b) AND (b > c))\n    Set ans = a + 10\nelse\n    Set ans = b - 5\nEnd if\nPrint ans",
+      "options": [
+        "19",
+        "22",
+        "20",
+        "16"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Evaluate (a < b): (48 < 24) is False. Evaluate (b > c): (24 > 12) is True. Both AND evaluates to False. Branch taken yields 19."
+    },
+    {
+      "id": 56,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, res\nSet a = 3, b = 9, c = 27\nif((a EQUALS b) OR (c > a + b))\n    Set res = a * 2\nelse\n    Set res = c - a\nEnd if\nPrint res",
+      "options": [
+        "6",
+        "9",
+        "3",
+        "7"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(a EQUALS b) is False. (c > a + b) is (27 > 12) = True. The OR condition is True. Result is 6."
+    },
+    {
+      "id": 57,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, val\nSet a = 22, b = 11, c = 44\nif(NOT(a > b) AND (c mod 2 EQUALS 0))\n    Set val = c / 2 + a\nelse\n    Set val = b / 2 + c\nEnd if\nPrint val",
+      "options": [
+        "49",
+        "46",
+        "52",
+        "50"
+      ],
+      "correctAnswer": 0,
+      "explanation": "NOT(a > b) is False. c mod 2 EQUALS 0 is True. AND condition is False. Value is 49."
+    },
+    {
+      "id": 58,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, out\nSet a = 19, b = 38, c = 57\nif((a + b >= c) AND (b - a < c))\n    Set out = a + b + c\nelse\n    Set out = a * 2 + b\nEnd if\nPrint out",
+      "options": [
+        "115",
+        "111",
+        "117",
+        "114"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(19 + 38 >= 57) is True. (38 - 19 < 57) is True. Condition is True. out = 114."
+    },
+    {
+      "id": 59,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, ans\nSet a = 45, b = 15, c = 30\nif((a * 2 > b) OR (b * 2 < c))\n    Set ans = a + b\nelse\n    Set ans = b + c\nEnd if\nPrint ans",
+      "options": [
+        "60",
+        "61",
+        "57",
+        "63"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(90 > 15) is True. (30 < 30) is False. Condition evaluates to True. Result = 60."
+    },
+    {
+      "id": 60,
+      "setId": 2,
+      "topic": "Relational & Logical Operators",
+      "difficulty": "Basic",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer a, b, c, x\nSet a = 36, b = 18, c = 9\nif((a NOT EQUALS b) AND NOT(c <= b))\n    Set x = a ^ c\nelse\n    Set x = b ^ c\nEnd if\nPrint x",
+      "options": [
+        "30",
+        "24",
+        "27",
+        "28"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(a NOT EQUALS b) is True. NOT(c <= b) is False. Combined is False. Result = 27."
+    }
+  ]
+}

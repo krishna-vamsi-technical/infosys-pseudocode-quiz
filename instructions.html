@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions — Infosys SE Quiz Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+    </button>
+    <div class="particles" id="particles"></div>
+
+    <main class="instructions-container">
+        <div class="instructions-card">
+            <div class="instructions-header">
+                <div class="instructions-icon">📋</div>
+                <h1 class="instructions-title" id="instructionsTitle">Mock Test Instructions</h1>
+                <p class="student-info" id="studentInfo"></p>
+            </div>
+
+            <!-- Mock Test Instructions -->
+            <div class="instructions-body" id="mockInstructions">
+                <div class="rule-group">
+                    <h3 class="rule-title">📝 Test Format</h3>
+                    <ul class="rules-list">
+                        <li>The test contains <strong>30 pseudocode questions</strong> randomly selected from a pool of 300.</li>
+                        <li>Each question has <strong>4 options</strong> with only <strong>one correct answer</strong>.</li>
+                        <li>Questions cover: Operators, Bitwise, Conditionals, Loops, Functions, Recursion.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">⏱️ Time Limits</h3>
+                    <ul class="rules-list">
+                        <li>You have <strong>90 seconds (1.5 minutes)</strong> per question.</li>
+                        <li>Total test time: <strong>45 minutes maximum</strong>.</li>
+                        <li>If the per-question timer expires, the question is <strong>auto-skipped</strong> as unanswered.</li>
+                        <li>If total time expires, the test is <strong>auto-submitted</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">🧭 Navigation</h3>
+                    <ul class="rules-list">
+                        <li>Navigation is <strong>one-way only</strong> — you cannot go back to previous questions.</li>
+                        <li>Click <strong>"Next"</strong> to move forward. Click <strong>"Submit Test"</strong> on the last question.</li>
+                        <li>You can skip a question by clicking Next without selecting an option.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">📊 Scoring</h3>
+                    <ul class="rules-list">
+                        <li><strong>+1 mark</strong> for each correct answer.</li>
+                        <li><strong>No negative marking</strong> for wrong or unanswered questions.</li>
+                        <li>Results with full answer review are shown <strong>immediately after submission</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-group warning-group">
+                    <h3 class="rule-title">🔒 Anti-Cheat Rules</h3>
+                    <ul class="rules-list">
+                        <li>The test runs in <strong>full-screen mode</strong>. Exiting fullscreen triggers a warning.</li>
+                        <li><strong>Tab switching</strong> is monitored and logged.</li>
+                        <li><strong>Right-click</strong> and <strong>copy-paste</strong> are disabled during the test.</li>
+                        <li>The test <strong>cannot be paused</strong> — complete it in one sitting.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Practice Mode Instructions -->
+            <div class="instructions-body" id="practiceInstructions" style="display:none;">
+                <div class="rule-group">
+                    <h3 class="rule-title">📝 Practice Format</h3>
+                    <ul class="rules-list">
+                        <li><strong>30 pseudocode questions</strong> randomly selected from a pool of 300.</li>
+                        <li>Each question has <strong>4 options</strong> with only <strong>one correct answer</strong>.</li>
+                        <li><strong>No timer</strong> — take as long as you need on each question.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">💡 Instant Feedback</h3>
+                    <ul class="rules-list">
+                        <li>After selecting an option, you'll <strong>immediately see</strong> if your answer is correct or wrong.</li>
+                        <li>The <strong>correct answer</strong> and a <strong>detailed explanation</strong> will be shown.</li>
+                        <li>You can <strong>change your answer</strong> before clicking "Next Question".</li>
+                        <li>The explanation stays visible until you navigate to the next question.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">📊 At the End</h3>
+                    <ul class="rules-list">
+                        <li>Your <strong>total score</strong> and <strong>topic-wise performance</strong> are shown.</li>
+                        <li>Full review of all questions with explanations is available.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="instructions-footer">
+                <div class="ready-check">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="readyCheck">
+                        <span class="checkmark"></span>
+                        <span>I have read and understood the instructions</span>
+                    </label>
+                </div>
+                <button class="btn-start btn-begin" id="beginBtn" disabled>
+                    <span id="beginBtnText">Begin Test</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/instructions.js"></script>
+</body>
+</html>

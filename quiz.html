@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz — Infosys SE Quiz Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="quiz-body">
+    <!-- Fullscreen Overlay Warning -->
+    <div class="fullscreen-warning" id="fullscreenWarning" style="display:none;">
+        <div class="warning-content">
+            <div class="warning-icon">⚠️</div>
+            <h2>Fullscreen Required</h2>
+            <p>You exited fullscreen mode. Please return to fullscreen to continue the test.</p>
+            <p class="tab-warn-count" id="tabWarnCount"></p>
+            <button class="btn-start" id="returnFullscreen">Return to Fullscreen</button>
+        </div>
+    </div>
+
+    <!-- Quiz Header -->
+    <header class="quiz-header" id="quizHeader">
+        <div class="header-left">
+            <span class="student-name-display" id="headerStudentName"></span>
+            <span class="mode-badge" id="modeBadge">MOCK TEST</span>
+        </div>
+        <div class="header-center">
+            <span class="question-counter" id="questionCounter">Q 1 / 30</span>
+        </div>
+        <div class="header-right">
+            <div class="timer-display" id="timerDisplay">
+                <span class="timer-icon">⏱️</span>
+                <span class="timer-value" id="timerValue">01:30</span>
+            </div>
+            <div class="total-timer" id="totalTimerDisplay">
+                <span class="total-timer-label">Total:</span>
+                <span class="total-timer-value" id="totalTimerValue">45:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Quiz Content -->
+    <main class="quiz-container">
+        <div class="question-card" id="questionCard">
+            <!-- Question Text -->
+            <div class="question-text" id="questionText"></div>
+
+            <!-- Code Block -->
+            <div class="code-block" id="codeBlock">
+                <div class="code-header">
+                    <span class="code-lang">PSEUDOCODE</span>
+                    <span class="code-qid" id="codeQid"></span>
+                </div>
+                <pre class="code-content" id="codeContent"></pre>
+            </div>
+
+            <!-- Options -->
+            <div class="options-container" id="optionsContainer"></div>
+
+            <!-- Practice Mode: Explanation Panel -->
+            <div class="explanation-panel" id="explanationPanel" style="display:none;">
+                <div class="explanation-header" id="explanationHeader">
+                    <span class="explanation-icon" id="explanationIcon"></span>
+                    <span class="explanation-status" id="explanationStatus"></span>
+                </div>
+                <div class="explanation-body">
+                    <strong>Correct Answer:</strong> <span id="correctAnswerText"></span>
+                    <div class="explanation-detail" id="explanationDetail"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="quiz-nav">
+            <div class="nav-info">
+                <span class="answered-count" id="answeredCount">0 / 30 answered</span>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-skip" id="skipBtn" style="display:none;">Skip</button>
+                <button class="btn-next" id="nextBtn">
+                    <span id="nextBtnText">Next Question</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <button class="btn-submit-quiz" id="submitQuizBtn" style="display:none;">
+                    Submit Test
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Submit Confirmation Modal -->
+    <div class="modal-overlay" id="submitModal" style="display:none;">
+        <div class="modal-card">
+            <h2 class="modal-title">Submit Test?</h2>
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <span class="modal-stat-num" id="modalAnswered">0</span>
+                    <span class="modal-stat-label">Answered</span>
+                </div>
+                <div class="modal-stat">
+                    <span class="modal-stat-num" id="modalUnanswered">0</span>
+                    <span class="modal-stat-label">Unanswered</span>
+                </div>
+            </div>
+            <p class="modal-warning">Once submitted, you cannot change your answers.</p>
+            <div class="modal-actions">
+                <button class="btn-cancel" id="cancelSubmit">Go Back</button>
+                <button class="btn-confirm-submit" id="confirmSubmit">Submit Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+{
+  "setId": 3,
+  "setName": "Set 3 \u2014 Bitwise Operators",
+  "totalQuestions": 30,
+  "timePerQuestion": 90,
+  "questions": [
+    {
+      "id": 61,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 12, q = 25\nSet r = (p & q) + (p ^ q)\nPrint r",
+      "options": [
+        "29",
+        "31",
+        "33",
+        "27"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bitwise AND (12 & 25) = 8. Bitwise XOR (12 ^ 25) = 21. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 8 + 21 = 29."
+    },
+    {
+      "id": 62,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, res\nSet p = 7, q = 11\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
+      "options": [
+        "9",
+        "15",
+        "13",
+        "11"
+      ],
+      "correctAnswer": 3,
+      "explanation": "p << 1 is 7 * 2 = 14. q >> 1 is 11 / 2 = 5. Bitwise XOR (14 ^ 5) = 11."
+    },
+    {
+      "id": 63,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, val\nSet p = 15, q = 23\nSet val = (p | q) - (p & q)\nPrint val",
+      "options": [
+        "26",
+        "28",
+        "22",
+        "24"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(p | q) = 31. (p & q) = 7. val = 31 - 7 = 24. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
+    },
+    {
+      "id": 64,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, ans\nSet p = 18\nSet ans = (p & 7) << 2\nPrint ans",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(p & 7) masks the lowest 3 bits of 18, yielding 2. Left shifting by 2 multiplies by 4: 2 << 2 = 8."
+    },
+    {
+      "id": 65,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, out\nSet p = 5, q = 9\nSet out = (p ^ q) ^ p\nPrint out",
+      "options": [
+        "7",
+        "13",
+        "11",
+        "9"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 9."
+    },
+    {
+      "id": 66,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 14, q = 28\nSet r = (p & 15) + (q >> 2)\nPrint r",
+      "options": [
+        "21",
+        "19",
+        "23",
+        "25"
+      ],
+      "correctAnswer": 0,
+      "explanation": "p & 15 = 14. q >> 2 = 7. r = 14 + 7 = 21."
+    },
+    {
+      "id": 67,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 8, q = 13\nSet r = (p & q) + (p ^ q)\nPrint r",
+      "options": [
+        "13",
+        "15",
+        "11",
+        "17"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bitwise AND (8 & 13) = 8. Bitwise XOR (8 ^ 13) = 5. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 8 + 5 = 13."
+    },
+    {
+      "id": 68,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, res\nSet p = 21, q = 14\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
+      "options": [
+        "47",
+        "49",
+        "43",
+        "45"
+      ],
+      "correctAnswer": 3,
+      "explanation": "p << 1 is 21 * 2 = 42. q >> 1 is 14 / 2 = 7. Bitwise XOR (42 ^ 7) = 45."
+    },
+    {
+      "id": 69,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, val\nSet p = 30, q = 19\nSet val = (p | q) - (p & q)\nPrint val",
+      "options": [
+        "11",
+        "17",
+        "13",
+        "15"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(p | q) = 31. (p & q) = 18. val = 31 - 18 = 13. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
+    },
+    {
+      "id": 70,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, ans\nSet p = 10\nSet ans = (p & 7) << 2\nPrint ans",
+      "options": [
+        "6",
+        "10",
+        "8",
+        "12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "(p & 7) masks the lowest 3 bits of 10, yielding 2. Left shifting by 2 multiplies by 4: 2 << 2 = 8."
+    },
+    {
+      "id": 71,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, out\nSet p = 16, q = 7\nSet out = (p ^ q) ^ p\nPrint out",
+      "options": [
+        "9",
+        "11",
+        "7",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 7."
+    },
+    {
+      "id": 72,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 27, q = 13\nSet r = (p & 15) + (q >> 2)\nPrint r",
+      "options": [
+        "18",
+        "14",
+        "12",
+        "16"
+      ],
+      "correctAnswer": 1,
+      "explanation": "p & 15 = 11. q >> 2 = 3. r = 11 + 3 = 14."
+    },
+    {
+      "id": 73,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 35, q = 22\nSet r = (p & q) + (p ^ q)\nPrint r",
+      "options": [
+        "53",
+        "55",
+        "59",
+        "57"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bitwise AND (35 & 22) = 2. Bitwise XOR (35 ^ 22) = 53. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 2 + 53 = 55."
+    },
+    {
+      "id": 74,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, res\nSet p = 40, q = 17\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
+      "options": [
+        "88",
+        "86",
+        "90",
+        "92"
+      ],
+      "correctAnswer": 0,
+      "explanation": "p << 1 is 40 * 2 = 80. q >> 1 is 17 / 2 = 8. Bitwise XOR (80 ^ 8) = 88."
+    },
+    {
+      "id": 75,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, val\nSet p = 25, q = 18\nSet val = (p | q) - (p & q)\nPrint val",
+      "options": [
+        "9",
+        "11",
+        "15",
+        "13"
+      ],
+      "correctAnswer": 1,
+      "explanation": "(p | q) = 27. (p & q) = 16. val = 27 - 16 = 11. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
+    },
+    {
+      "id": 76,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, ans\nSet p = 11\nSet ans = (p & 7) << 2\nPrint ans",
+      "options": [
+        "12",
+        "16",
+        "10",
+        "14"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(p & 7) masks the lowest 3 bits of 11, yielding 3. Left shifting by 2 multiplies by 4: 3 << 2 = 12."
+    },
+    {
+      "id": 77,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, out\nSet p = 9, q = 15\nSet out = (p ^ q) ^ p\nPrint out",
+      "options": [
+        "15",
+        "13",
+        "19",
+        "17"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 15."
+    },
+    {
+      "id": 78,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 20, q = 10\nSet r = (p & 15) + (q >> 2)\nPrint r",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "p & 15 = 4. q >> 2 = 2. r = 4 + 2 = 6."
+    },
+    {
+      "id": 79,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 33, q = 14\nSet r = (p & q) + (p ^ q)\nPrint r",
+      "options": [
+        "47",
+        "49",
+        "51",
+        "45"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bitwise AND (33 & 14) = 0. Bitwise XOR (33 ^ 14) = 47. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 0 + 47 = 47."
+    },
+    {
+      "id": 80,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, res\nSet p = 45, q = 27\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
+      "options": [
+        "87",
+        "85",
+        "89",
+        "91"
+      ],
+      "correctAnswer": 0,
+      "explanation": "p << 1 is 45 * 2 = 90. q >> 1 is 27 / 2 = 13. Bitwise XOR (90 ^ 13) = 87."
+    },
+    {
+      "id": 81,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, val\nSet p = 6, q = 13\nSet val = (p | q) - (p & q)\nPrint val",
+      "options": [
+        "11",
+        "15",
+        "13",
+        "9"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(p | q) = 15. (p & q) = 4. val = 15 - 4 = 11. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
+    },
+    {
+      "id": 82,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, ans\nSet p = 24\nSet ans = (p & 7) << 2\nPrint ans",
+      "options": [
+        "4",
+        "-2",
+        "2",
+        "0"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(p & 7) masks the lowest 3 bits of 24, yielding 0. Left shifting by 2 multiplies by 4: 0 << 2 = 0."
+    },
+    {
+      "id": 83,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, out\nSet p = 17, q = 31\nSet out = (p ^ q) ^ p\nPrint out",
+      "options": [
+        "31",
+        "35",
+        "29",
+        "33"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 31."
+    },
+    {
+      "id": 84,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 50, q = 21\nSet r = (p & 15) + (q >> 2)\nPrint r",
+      "options": [
+        "5",
+        "7",
+        "11",
+        "9"
+      ],
+      "correctAnswer": 1,
+      "explanation": "p & 15 = 2. q >> 2 = 5. r = 2 + 5 = 7."
+    },
+    {
+      "id": 85,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 22, q = 19\nSet r = (p & q) + (p ^ q)\nPrint r",
+      "options": [
+        "27",
+        "21",
+        "25",
+        "23"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Bitwise AND (22 & 19) = 18. Bitwise XOR (22 ^ 19) = 5. (Note that (A & B) + (A ^ B) = A | B in Boolean algebra arithmetic). Total = 18 + 5 = 23."
+    },
+    {
+      "id": 86,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, res\nSet p = 13, q = 27\nSet res = (p << 1) ^ (q >> 1)\nPrint res",
+      "options": [
+        "27",
+        "23",
+        "21",
+        "25"
+      ],
+      "correctAnswer": 1,
+      "explanation": "p << 1 is 13 * 2 = 26. q >> 1 is 27 / 2 = 13. Bitwise XOR (26 ^ 13) = 23."
+    },
+    {
+      "id": 87,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, val\nSet p = 28, q = 15\nSet val = (p | q) - (p & q)\nPrint val",
+      "options": [
+        "21",
+        "19",
+        "23",
+        "17"
+      ],
+      "correctAnswer": 1,
+      "explanation": "(p | q) = 31. (p & q) = 12. val = 31 - 12 = 19. (Notice (A | B) - (A & B) is mathematically identical to A ^ B)."
+    },
+    {
+      "id": 88,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, ans\nSet p = 31\nSet ans = (p & 7) << 2\nPrint ans",
+      "options": [
+        "28",
+        "32",
+        "30",
+        "26"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(p & 7) masks the lowest 3 bits of 31, yielding 7. Left shifting by 2 multiplies by 4: 7 << 2 = 28."
+    },
+    {
+      "id": 89,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, out\nSet p = 19, q = 25\nSet out = (p ^ q) ^ p\nPrint out",
+      "options": [
+        "29",
+        "25",
+        "27",
+        "23"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Due to the associative and inverse properties of XOR, (p ^ q) ^ p = (p ^ p) ^ q = 0 ^ q = q = 25."
+    },
+    {
+      "id": 90,
+      "setId": 3,
+      "topic": "Bitwise Operators",
+      "difficulty": "Medium",
+      "question": "What will be the output of the following pseudocode?",
+      "code": "Integer p, q, r\nSet p = 36, q = 42\nSet r = (p & 15) + (q >> 2)\nPrint r",
+      "options": [
+        "12",
+        "18",
+        "16",
+        "14"
+      ],
+      "correctAnswer": 3,
+      "explanation": "p & 15 = 4. q >> 2 = 10. r = 4 + 10 = 14."
+    }
+  ]
+}
